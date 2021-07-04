@@ -1,0 +1,26 @@
+@import url('http://fonts.cdnfonts.com/css/dinpro-regular');
+* {
+    font-family: 'DINPro-Regular', sans-serif;
+}
+
+.slide-home {
+    transition: all 0.5s;
+    .img-slide {
+        position: absolute;
+    }
+    .btn-slide {
+        li {
+            position: relative;
+            width: 40px;
+            height: 3px;
+            background-color: silver;
+            margin-right: 1%;
+            left: 44%;
+            margin-top: 33%;
+            cursor: pointer;
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
