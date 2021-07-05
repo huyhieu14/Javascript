@@ -23,12 +23,27 @@ function hideSearchBar() {
     document.getElementById("loupeicon").style.backgroundColor = "";
 }
 
+
+
+var imgslider = document.getElementsByClassName("img-slide");
 document.getElementById("slide1").addEventListener("click", () => {
-    document.getElementById("imgSlide").src = "https://storage-asset.msi.com/global/picture/banner/banner_1619658851edf92d0b3ccb5fede42e9ec83b6718c7.jpeg", 2000;
+    $(".img-slide").css("opacity", "0");
+    imgslider[0].style.opacity = "1";
 })
 document.getElementById("slide2").addEventListener("click", () => {
-    document.getElementById("imgSlide").src = "https://storage-asset.msi.com/global/picture/banner/banner_16206347303e39b75d3193bff1c9e44bd51d426986.jpeg"
+    $(".img-slide").css("opacity", "0");
+    imgslider[1].style.opacity = "1";
 })
 document.getElementById("slide3").addEventListener("click", () => {
-    document.getElementById("imgSlide").src = "https://storage-asset.msi.com/global/picture/banner/banner_1625037084a14b7f3fa3daec659905c713b7a92522.jpeg"
+    $(".img-slide").css("opacity", "0");
+    imgslider[2].style.opacity = "1";
 })
+var index = 0;
+setInterval(() => {
+    $(".img-slide").css("opacity", "0");
+    imgslider[index].style.opacity = "1";
+    index++;
+    if (index == 3) {
+        index = 0;
+    }
+}, 3000)

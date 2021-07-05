@@ -10,6 +10,9 @@
 
 .slide-home .img-slide {
   position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .slide-home .btn-slide li {
@@ -25,5 +28,58 @@
 
 .slide-home .btn-slide li:hover {
   background-color: red;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.search_input {
+  color: black;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+}
+
+.searchbar:hover > .search_input {
+  width: 70%;
+  caret-color: red;
+  -webkit-transition: width 0.8s linear;
+  transition: width 0.8s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: white;
+  color: #e74c3c;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #8a8a8a;
+  text-decoration: none;
+  font-size: 23px;
 }
 /*# sourceMappingURL=style.css.map */
