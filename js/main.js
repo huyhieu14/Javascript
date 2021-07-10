@@ -1,7 +1,6 @@
 function myFunction(x) {
     x.classList.toggle("change");
 }
-
 var imgslider = document.getElementsByClassName("img-slide");
 document.getElementById("slide1").addEventListener("click", () => {
     $(".img-slide").css("opacity", "0");
