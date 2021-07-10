@@ -71,3 +71,46 @@
     text-decoration: none;
     font-size: 23px;
 }
+
+.z {
+    background-color: #222222;
+    .z2 {
+        position: relative;
+        opacity: 0.6;
+        transition: all .5s;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .img-1 {}
+    .text-img {
+        width: 95%;
+        position: absolute;
+        color: white;
+        top: 5%;
+    }
+}
+
+.z3 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    transition: all .5s;
+    &:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+        .service-head {
+            color: white;
+            img {
+                filter: invert(100%);
+            }
+        }
+    }
+    .service-head {
+        margin: auto;
+        img {
+            width: 20%;
+        }
+        position: absolute;
+    }
+}
