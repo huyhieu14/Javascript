@@ -8,7 +8,7 @@
     .img-slide {
         position: absolute;
         opacity: 1;
-        transition: opacity 0.3s;
+        transition: opacity 0.5s;
     }
     .btn-slide {
         li {
@@ -17,9 +17,10 @@
             height: 3px;
             background-color: silver;
             margin-right: 1%;
-            left: 44%;
             margin-top: 33%;
             cursor: pointer;
+            left: 50%;
+            transform: translateX(-170%);
             &:hover {
                 background-color: red;
             }
