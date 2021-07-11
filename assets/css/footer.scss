@@ -1,0 +1,41 @@
+footer {
+    align-content: center;
+    h5 {
+        font-weight: 500;
+        padding-bottom: 1rem;
+        a {
+            color: black;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #666;
+        &:hover {
+            color: black;
+        }
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    .container-footer {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .nav-shortcut {
+        justify-content: space-between;
+        li,
+        h5 {
+            padding-bottom: 1rem;
+        }
+    }
+    .nav-infor {
+        justify-content: space-between;
+        li {
+            font-size: smaller;
+            margin-right: 1rem;
+        }
+    }
+}
