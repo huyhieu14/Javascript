@@ -30,6 +30,7 @@
 
 @media (max-width: 1399.98px) {
   .nav-header .header-lg .header-left li {
+    padding-left: 2%;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
@@ -242,5 +243,73 @@
 .nav-header .header-sm .offcanvas .accordion-button:not(.collapsed)::after {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.top-header {
+  background-color: #333333;
+}
+
+.top-header form {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+}
+
+.top-header form input {
+  position: relative;
+  width: 422px;
+  padding: 5px 30px 5px 10px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.top-header form button {
+  height: 40px;
+  border: none;
+  background: none;
+  right: 16%;
+  position: absolute;
+}
+
+.middle-header {
+  background-color: #222222;
+}
+
+.middle-header span ul li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.middle-header span ul li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.middle-header .container {
+  margin: 0 auto;
+}
+
+.middle-header .container .btn-group li {
+  padding: 0;
+}
+
+.middle-header .container .btn {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.middle-header .container .btn:hover {
+  border-bottom: 1px solid red;
+}
+
+.middle-header .container .dropdown-menu {
+  border-radius: 0;
+}
+
+.bottom-header {
+  background-color: #000000;
 }
 /*# sourceMappingURL=header.css.map */

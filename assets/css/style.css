@@ -148,61 +148,128 @@
      object-fit: scale-down;
 }
 
-footer {
-  -ms-flex-line-pack: center;
-      align-content: center;
+.slide {
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-footer h5 {
-  font-weight: 500;
-  padding-bottom: 1rem;
+.slide .sliders {
+  overflow: hidden;
 }
 
-footer h5 a {
-  color: black;
-}
-
-footer a {
-  text-decoration: none;
-  color: #666;
-}
-
-footer a:hover {
-  color: black;
-}
-
-footer ul {
+.slide .sliders .imgslider {
+  -webkit-transition: all .5s;
+  transition: all .5s;
   padding: 0;
 }
 
-footer li {
-  list-style-type: none;
+.slide .sliders input {
+  display: none;
 }
 
-footer .container-footer {
-  max-width: 80%;
+.slide .slider-manual {
+  width: 100%;
+  position: absolute;
+  margin-top: -40px;
+}
+
+.slide .slider-manual .manual-btn {
+  border: none;
+  padding: 2px 20px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #fff;
+}
+
+.slide .slider-manual .manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slide .slider-manual .manual-btn:hover {
+  background-color: red;
+}
+
+.slide #radio1:checked ~ .first {
+  margin-left: 0%;
+}
+
+.slide #radio2:checked ~ .first {
+  margin-left: -101%;
+}
+
+.slide #radio3:checked ~ .first {
+  margin-left: -202%;
+}
+
+.slide #radio4:checked ~ .first {
+  margin-left: -303%;
+}
+
+.slide #radio5:checked ~ .first {
+  margin-left: -404%;
+}
+
+.slide #radio6:checked ~ .first {
+  margin-left: -505%;
+}
+
+.slide .slider-auto {
+  width: 100%;
+  margin-top: -40px;
+  position: absolute;
+}
+
+.slide .slider-auto div {
+  border: none;
+  padding: 2px 20px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.slide .slider-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slide #radio1:checked ~ .auto-btn1 {
+  background: red;
+}
+
+.slide #radio2:checked ~ .auto-btn2 {
+  background: red;
+}
+
+.slide #radio3:checked ~ .auto-btn3 {
+  background: red;
+}
+
+.slide #radio4:checked ~ .auto-btn4 {
+  background: red;
+}
+
+.slide #radio5:checked ~ .auto-btn5 {
+  background: red;
+}
+
+.slide #radio6:checked ~ .auto-btn6 {
+  background: red;
+}
+
+.expProduct {
   margin: 0 auto;
+  width: 80%;
 }
 
-footer .nav-shortcut {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.expProduct .col-node {
+  text-align: center;
 }
 
-footer .nav-shortcut li,
-footer .nav-shortcut h5 {
-  padding-bottom: 1rem;
+.expProduct .col-node:not(:last-child) {
+  margin-right: 4rem;
 }
 
-footer .nav-infor {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .nav-infor li {
-  font-size: smaller;
-  margin-right: 1rem;
+.product-banner {
+  background-color: #010103;
 }
 /*# sourceMappingURL=style.css.map */
