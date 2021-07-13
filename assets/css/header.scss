@@ -1,6 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+}
+
 .nav-header {
+    background-color: #fff;
     .header-lg {
-        position: relative;
+        // position: relative;
         height: 97px;
         .header-left {
             .logo-homepage:hover {

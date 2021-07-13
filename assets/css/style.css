@@ -149,6 +149,8 @@
 }
 
 .slide {
+  width: 100vw;
+  height: 100vh;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -271,5 +273,31 @@
 
 .product-banner {
   background-color: #010103;
+}
+
+#triangle-bottomleft {
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 70px solid #000025;
+  border-right: 70px solid transparent;
+}
+
+.activity {
+  position: fixed !important;
+  right: -100px;
+  bottom: 50px;
+}
+
+#icon {
+  position: fixed;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 4;
+  fill: #000025;
 }
 /*# sourceMappingURL=style.css.map */

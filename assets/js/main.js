@@ -28,3 +28,21 @@ function sliderHome() {
     }, 5000)
 }
 sliderHome();
+
+window.onscroll = () => {
+    stickyHeader();
+}
+var headerLg = document.getElementsByClassName("header")[0];
+var sticky = headerLg.offsetTop;
+
+function stickyHeader() {
+    if (window.pageYOffset > sticky) {
+        headerLg.classList.add("sticky");
+    } else {
+        headerLg.classList.remove("sticky");
+    }
+}
+
+function changeImg() {
+    document.getElementById("imgActivity").src = "https://storage-asset.msi.com/frontend/imgs/Widget_MSIOLOGY.png"
+}
