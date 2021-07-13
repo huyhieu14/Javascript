@@ -25,7 +25,7 @@ function sliderHome() {
         if (index == 3) {
             index = 0;
         }
-    }, 5000)
+    }, 8000)
 }
 sliderHome();
 
@@ -46,3 +46,21 @@ function stickyHeader() {
 function changeImg() {
     document.getElementById("imgActivity").src = "https://storage-asset.msi.com/frontend/imgs/Widget_MSIOLOGY.png"
 }
+
+function recoveryImg() {
+    document.getElementById("imgActivity").src = "https://storage-asset.msi.com/frontend/imgs/Widget_TIAMAT.png"
+}
+
+var windowW = window.innerHeight - 1030;
+
+function moveTopImg() {
+    $("#activity").animate({ top: "-=" + windowW }, 1200, moveBotImg)
+}
+
+function moveBotImg() {
+    $("#activity").animate({ top: "+=" + windowW }, 1200, moveTopImg)
+}
+
+$(document).ready(function() {
+    moveTopImg();
+});

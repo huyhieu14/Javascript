@@ -36,11 +36,7 @@
                 &:hover {
                     transition: none;
                     // border-bottom: 3px solid red;
-                    &::after {
-                        // opacity: 1;
-                    }
                 }
-                &::after {}
                 @media (max-width: 1399.98px) {
                     padding-left: 2%;
                     transition: all 0.8s;

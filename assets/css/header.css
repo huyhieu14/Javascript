@@ -9,8 +9,11 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #fff;
   padding: 0;
+}
+
+.nav-header {
+  background-color: #fff;
 }
 
 .nav-header .header-lg {

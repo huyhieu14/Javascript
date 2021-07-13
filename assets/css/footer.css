@@ -51,6 +51,10 @@ footer .nav-infor {
           justify-content: space-between;
 }
 
+footer .nav-infor .row {
+  width: 80%;
+}
+
 footer .nav-infor li {
   font-size: smaller;
   margin-right: 1rem;
