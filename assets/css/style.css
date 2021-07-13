@@ -144,8 +144,8 @@
 
 .z3 .service-head img {
   width: 20%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slide {
@@ -288,6 +288,7 @@
   position: fixed !important;
   right: -100px;
   bottom: 90px;
+  z-index: 10;
 }
 
 #icon {

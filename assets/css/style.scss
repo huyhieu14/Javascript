@@ -118,7 +118,7 @@
         transform: translate(-50%, -50%);
         img {
             width: 20%;
-            object-fit: scale-down;
+            object-fit: cover;
         }
     }
 }
@@ -235,6 +235,7 @@
     position: fixed !important;
     right: -100px;
     bottom: 90px;
+    z-index: 10;
 }
 
 #icon {

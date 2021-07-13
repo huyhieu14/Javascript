@@ -15,7 +15,6 @@
 .nav-header {
     background-color: #fff;
     .header-lg {
-        // position: relative;
         height: 97px;
         .header-left {
             .logo-homepage:hover {
@@ -35,7 +34,6 @@
                 }
                 &:hover {
                     transition: none;
-                    // border-bottom: 3px solid red;
                 }
                 @media (max-width: 1399.98px) {
                     padding-left: 2%;
@@ -51,7 +49,6 @@
                         transition: all 0.8s;
                     }
                     &::after {
-                        // color: red;
                         content: '';
                         width: 100%;
                         height: 4px;
