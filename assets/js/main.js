@@ -51,7 +51,7 @@ function recoveryImg() {
     document.getElementById("imgActivity").src = "https://storage-asset.msi.com/frontend/imgs/Widget_TIAMAT.png"
 }
 
-var windowW = window.innerHeight - 1030;
+var windowW = window.innerHeight - 700;
 
 function moveTopImg() {
     $("#activity").animate({ top: "-=" + windowW }, 1200, moveBotImg)
