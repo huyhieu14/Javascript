@@ -234,8 +234,20 @@
 .activity {
     position: fixed !important;
     right: -100px;
-    bottom: 90px;
+    bottom: 30px;
     z-index: 10;
+    animation: updown 2.5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes updown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
 }
 
 #icon {

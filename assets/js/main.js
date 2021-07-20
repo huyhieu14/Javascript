@@ -51,16 +51,16 @@ function recoveryImg() {
     document.getElementById("imgActivity").src = "https://storage-asset.msi.com/frontend/imgs/Widget_TIAMAT.png"
 }
 
-var windowW = window.innerHeight - 700;
+// var windowW = window.innerHeight - 650 + 'rem';
 
-function moveTopImg() {
-    $("#activity").animate({ top: "-=" + windowW }, 1200, moveBotImg)
-}
+// function moveTopImg() {
+//     $("#activity").animate({ top: "-=" + windowW }, 1200, moveBotImg)
+// }
 
-function moveBotImg() {
-    $("#activity").animate({ top: "+=" + windowW }, 1200, moveTopImg)
-}
+// function moveBotImg() {
+//     $("#activity").animate({ top: "+=" + windowW }, 1200, moveTopImg)
+// }
 
-$(document).ready(function() {
-    moveTopImg();
-});
+// $(document).ready(function() {
+//     moveTopImg();
+// });

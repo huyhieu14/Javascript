@@ -287,8 +287,35 @@
 .activity {
   position: fixed !important;
   right: -100px;
-  bottom: 90px;
+  bottom: 30px;
   z-index: 10;
+  -webkit-animation: updown 2.5s linear infinite;
+          animation: updown 2.5s linear infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes updown {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
 }
 
 #icon {
