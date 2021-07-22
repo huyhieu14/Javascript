@@ -33,6 +33,15 @@
             color: red;
         }
     }
+    .user-btn {
+        padding: 10px 0px 10px 0px;
+        color: rgb(110, 110, 110);
+        border: none;
+        font-weight: bold;
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 .dropdown:hover .dropdown-content {

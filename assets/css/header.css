@@ -38,6 +38,17 @@
   color: red;
 }
 
+.dropdown-content .user-btn {
+  padding: 10px 0px 10px 0px;
+  color: #6e6e6e;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown-content .user-btn:hover {
+  color: red;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }

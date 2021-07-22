@@ -12,11 +12,6 @@ function checkLogin() {
                     'You clicked the button!',
                     'success'
                 )
-                var userCurrent = {
-                    email: cEmailLogin,
-                    password: cPassLogin
-                }
-                localStorage.setItem('userCurrent2', userCurrent);
                 localStorage.setItem('userCurrent', user.userName);
                 loginC.setAttribute("href", "../../index.html")
                 return;

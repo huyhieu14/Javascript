@@ -1,10 +1,6 @@
 var userCurrent = localStorage.getItem("userCurrent") ? (localStorage.getItem("userCurrent")) : "";
-// if (userCurrent != "") {
-//     let User = document.createElement("div")
-//     User.innerHTML = userCurrent;
-// }
-userCurrent ? document.getElementById("nameCurrent").innerHTML = userCurrent : null;
 
+userCurrent ? document.getElementById("nameCurrent").innerHTML = userCurrent : null;
 
 
 function myFunction(x) {
