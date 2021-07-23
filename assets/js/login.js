@@ -37,9 +37,9 @@ function checkRegister() {
         listAccount.push(user);
         localStorage.setItem("user", JSON.stringify(listAccount))
         Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
+            'ĐĂNG KÝ THÀNH CÔNG!',
+            'Click ok để xác nhận!',
+            'Ok'
         )
         console.log(listAccount);
     } else {
