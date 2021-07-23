@@ -273,3 +273,21 @@
 .name-acc {
     color: rgb(110, 110, 110);
 }
+
+.product {
+    font-family: DINPro-Regular;
+    .card {
+        border: none;
+    }
+    .btn {
+        border-radius: 20px;
+        background-color: red;
+        color: white;
+    }
+    li,
+    h5 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

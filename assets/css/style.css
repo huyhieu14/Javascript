@@ -341,4 +341,25 @@
 .name-acc {
   color: #6e6e6e;
 }
+
+.product {
+  font-family: DINPro-Regular;
+}
+
+.product .card {
+  border: none;
+}
+
+.product .btn {
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+}
+
+.product li,
+.product h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*# sourceMappingURL=style.css.map */
