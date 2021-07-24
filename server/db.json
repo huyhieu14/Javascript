@@ -1,57 +1,158 @@
 {
-    "product": [{
-        "title": "Aegis RS 10TD-213US Gaming Desktop",
-        "system": "Windows 10 Home",
-        "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
-        "vga": "NVIDIA® GeForce RTX™ 3070 8GB GDDR6",
-        "ram": "16GB DDR4 3000Mhz (8GB x 2)",
-        "storage": "1TB 2.5 SATA SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
-        "price": "2199"
-    }, {
-        "title": "Aegis RS 10TD-213US Gaming Desktop",
-        "system": "Windows 10 Home",
-        "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
-        "vga": "AMD Radeon™ RX 6700 XT 12GB GDDR6",
-        "ram": "16GB DDR4 3000Mhz (8GB x 2)",
-        "storage": "1TB 2.5 SATA SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
-        "price": "1199"
-    }, {
-        "title": "MEG Trident X 10TD-1282US Slim Gaming",
-        "system": "Windows 10 Home",
-        "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
-        "vga": "NVIDIA® GeForce RTX™ 3070 8G GDDR6",
-        "ram": "32GB DDR4 3000 MHz (2 x 16GB)",
-        "storage": "1TB M.2 NVMe SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
-        "price": "2399"
-    }, {
-        "title": "MPG Trident A 10TD-1420US Slim Gaming",
-        "system": "Windows 10 Home",
-        "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
-        "vga": "AMD Radeon™ RX 6700 XT 12GB GDDR6",
-        "ram": "16GB DDR4 3000Mhz (8GB x 2)",
-        "storage": "1TB 2.5 SATA SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
-        "price": "1999"
-    }, {
-        "title": "GF75 Thin 10SDR-455 17.3 FHD",
-        "system": "Windows 10 Home",
-        "core": "Intel® Core™ i5-10300H 2.5GHz",
-        "vga": "6G GDDR6 NVIDIA® GeForce® GTX 1660 Ti 4GB GDDR5",
-        "ram": "8GB (8G*1) DDR4 2666MHz",
-        "storage": "1TB 2.5 SATA SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-160x160.png",
-        "price": "1099"
-    }, {
-        "title": "Crosshair 15 A11UDK-412 15.6 FHD",
-        "system": "Windows 10 Home",
-        "core": "Intel® Core™ i7-11800H 2.4GHz",
-        "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
-        "ram": "8GB (8G*1) DDR4 3200MHz",
-        "storage": "1TB 2.5 SATA SSD",
-        "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/CROSSHAIR15/11TH/CROSSHAIR15-1-160x160.png",
-        "price": "1249"
-    }]
+  "product": [
+    {
+      "id": 1,
+      "title": "Aegis RS 10TD-213US Gaming Desktop",
+      "system": "Windows 10 Home",
+      "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
+      "vga": "NVIDIA® GeForce RTX™ 3070 8GB GDDR6",
+      "ram": "16GB DDR4 3000Mhz (8GB x 2)",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
+      "price": "2199"
+    },
+    {
+      "id": 2,
+      "title": "Aegis RS 10TD-213US Gaming Desktop",
+      "system": "Windows 10 Home",
+      "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
+      "vga": "AMD Radeon™ RX 6700 XT 12GB GDDR6",
+      "ram": "16GB DDR4 3000Mhz (8GB x 2)",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
+      "price": "1199"
+    },
+    {
+      "id": 3,
+      "title": "MEG Trident X 10TD-1282US Slim Gaming",
+      "system": "Windows 10 Home",
+      "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
+      "vga": "NVIDIA® GeForce RTX™ 3070 8G GDDR6",
+      "ram": "32GB DDR4 3000 MHz (2 x 16GB)",
+      "storage": "1TB M.2 NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
+      "price": "2399"
+    },
+    {
+      "id": 4,
+      "title": "MPG Trident A 10TD-1420US Slim Gaming",
+      "system": "Windows 10 Home",
+      "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
+      "vga": "AMD Radeon™ RX 6700 XT 12GB GDDR6",
+      "ram": "16GB DDR4 3000Mhz (8GB x 2)",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
+      "price": "1999"
+    },
+    {
+      "id": 5,
+      "title": "GF75 Thin 10SDR-455 17.3 FHD",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i5-10300H 2.5GHz",
+      "vga": "6G GDDR6 NVIDIA® GeForce® GTX 1660 Ti 4GB GDDR5",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-160x160.png",
+      "price": "1099"
+    },
+    {
+      "id": 6,
+      "title": "Crosshair 15 A11UDK-412 15.6 FHD",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-11800H 2.4GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 3200MHz",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/CROSSHAIR15/11TH/CROSSHAIR15-1-160x160.png",
+      "price": "1249"
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "14\" FHD, IPS level Anti-Glare Wide View Angle Thin",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/MODERN15/BLACK/Modern15B-7-160x160.png",
+      "price": "599",
+      "id": 7
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "1149",
+      "id": 8
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "599",
+      "id": 9
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "599",
+      "id": 10
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "1149",
+      "id": 11
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "599",
+      "id": 12
+    },
+    {
+      "title": "Optix MAG274QRF-QD 27\" Flat Gaming Monitor",
+      "system": "Rapid IPS – Provides 1ms GTG fast response time, optimizes screen colors and brightness.",
+      "core": "Quantum Dot – Provide accurate color imagery and support a cinema-standard DCI-P3 color gamut.",
+      "vga": "WQHD High Resolution – Games will look even better, displaying",
+      "ram": "None",
+      "storage": "None",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Monitor/MAG274QRF/MAG274QRF-1-228x228.png",
+      "price": "449",
+      "id": 13
+    },
+    {
+      "title": "Prestige 14 EVO A11M-289 14\" FHD Ultra Thin",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-1185G7 1.2GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 2666MHz",
+      "storage": "512GB NVMe SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/PRESTIGE14/GEN11/EVO/WHITE/P14GEN11EVOWH-1-160x160.png",
+      "price": "1149",
+      "id": 14
+    }
+  ]
 }

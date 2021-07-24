@@ -1,6 +1,8 @@
 var userCurrent = localStorage.getItem("userCurrent") ? (localStorage.getItem("userCurrent")) : "";
+var userCurrent2 = localStorage.getItem("userCurrent2") ? (localStorage.getItem("userCurrent2")) : "";
 
 userCurrent ? document.getElementById("nameCurrent").innerHTML = userCurrent : null;
+userCurrent2 ? document.getElementById("emailCurrent").innerHTML = userCurrent2 : null;
 
 
 function myFunction(x) {
