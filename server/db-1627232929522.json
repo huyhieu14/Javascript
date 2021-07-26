@@ -34,15 +34,37 @@
       "price": "1999"
     },
     {
-      "title": "GF75 Thin 10SDR-455 17.3 FHD 123",
+      "id": 5,
+      "title": "GF75 Thin 10SDR-455 17.3 FHD",
       "system": "Windows 10 Home",
       "core": "Intel® Core™ i5-10300H 2.5GHz",
       "vga": "6G GDDR6 NVIDIA® GeForce® GTX 1660 Ti 4GB GDDR5",
       "ram": "8GB (8G*1) DDR4 2666MHz",
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-160x160.png",
-      "price": "1099",
-      "id": 5
+      "price": "1099"
+    },
+    {
+      "id": 6,
+      "title": "Crosshair 15 A11UDK-412 15.6 FHD",
+      "system": "Windows 10 Home",
+      "core": "Intel® Core™ i7-11800H 2.4GHz",
+      "vga": "NVIDIA® GeForce RTX™ 3050 Ti Laptop GPU 4GB GDDR6",
+      "ram": "8GB (8G*1) DDR4 3200MHz",
+      "storage": "1TB 2.5 SATA SSD",
+      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/CROSSHAIR15/11TH/CROSSHAIR15-1-160x160.png",
+      "price": "1249"
+    },
+    {
+      "product_title": "Prestige",
+      "product_system": "Windows",
+      "product_core": "Intel®",
+      "product_vga": "14\"",
+      "product_ram": "8GB",
+      "product_storage": "512GB",
+      "product_image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/MODERN15/BLACK/Modern15B-7-160x160.png",
+      "product_price": "5999",
+      "id": 7
     }
   ]
 }
