@@ -1,7 +1,6 @@
 {
   "product": [
     {
-      "id": 1,
       "title": "Aegis RS 10TD-213US Gaming Desktop",
       "system": "Windows 10 Home",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
@@ -9,8 +8,8 @@
       "ram": "16GB DDR4 3000Mhz (8GB x 2)",
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
-      "price": "1199",
-      "category" : "Desktop"
+      "price": "1299",
+      "id": 1
     },
     {
       "id": 2,
@@ -22,7 +21,7 @@
       "storage": "1TB M.2 NVMe SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
       "price": "2399",
-      "category" : "Laptop"
+      "category": "Laptop"
     },
     {
       "id": 3,
@@ -34,8 +33,7 @@
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
       "price": "1999",
-      "category" : "Laptop"
-
+      "category": "Laptop"
     },
     {
       "title": "GF75 Thin 10SDR-455 17.3 FHD 123",
@@ -47,7 +45,7 @@
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-160x160.png",
       "price": "1099",
       "id": 4,
-      "category" : "Desktop"
+      "category": "Desktop"
     }
   ]
 }

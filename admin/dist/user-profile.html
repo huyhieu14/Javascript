@@ -81,9 +81,6 @@
                 <hr class="separator" />
             </div>
         </aside>
-
-
-
         <div class="page-wrapper">
             <!-- Header -->
             <header class="main-header " id="header">
@@ -105,20 +102,24 @@
                         </div>
                     </div>
 
-                    <div class="navbar-right ">
+                    <div class="navbar-right">
                         <ul class="nav navbar-nav">
                             <!-- User Account -->
                             <li class="dropdown user-menu">
                                 <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                      <img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" class="user-image" alt="User Image" />
-                      <span class="d-none d-lg-inline-block" id="nameCurrent"></span>
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png"
+                      class="user-image"
+                      alt="User Image"
+                    />
+                    <span class="d-none d-lg-inline-block" id="nameCurrentAdmin"></span>
                   </button>
                                 <ul class="dropdown-menu dropdown-menu-right" style="width: 285px;">
                                     <!-- User image -->
                                     <li class="dropdown-header">
                                         <img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" class="img-circle" alt="User Image" />
                                         <div class="d-inline-block">
-                                            <small class="pt-1" id="emailCurrent"></small>
+                                            <small class="pt-1" id="emailCurrentAdmin"></small>
                                         </div>
                                     </li>
                                     <li>
@@ -134,15 +135,9 @@
                                 </ul>
                             </li>
                         </ul>
-                        </li>
-                        </ul>
                     </div>
                 </nav>
-
-
             </header>
-
-
             <div class="content-wrapper">
                 <div class="content">
                     <div class="bg-white border rounded">
@@ -154,8 +149,8 @@
                                             <img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" alt="user image" class="img-fluid">
                                         </div>
                                         <div class="card-body">
-                                            <h4 class="py-2 text-dark">Name</h4>
-                                            <p>Albrecht.straub@gmail.com</p>
+                                            <h4 class="py-2 text-dark" id="nameCurrentAdmin2"></h4>
+                                            <p id="emailCurrentAdmin2"></p>
                                             <a class="btn btn-primary btn-pill btn-lg my-4" href="#">Follow</a>
                                         </div>
                                     </div>
@@ -256,7 +251,62 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+                                        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                            <div class="card-header card-header-border-bottom">
+                                                <h2>Sửa thông tin tài khoản</h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="validationServer01">First name</label>
+                                                            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="validationServer02">Last name</label>
+                                                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="validationServerUsername">Username</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                                                            <div class="invalid-feedback">
+                                                                Please choose a username.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationServer03">City</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid city.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationServer04">State</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid state.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationServer05">Zip</label>
+                                                            <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid zip.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -291,11 +341,7 @@
     <script src="assets/js/date-range.js"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="../../assets/js/main.js"></script>
-
-
-
-
+    <script src="/admin/dist/assets/js/loginAdmin.js"></script>
 </body>
 
 </html>
