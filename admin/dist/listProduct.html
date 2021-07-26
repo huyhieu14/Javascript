@@ -1,224 +1,294 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>MSI - ADMIN</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
-        <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
-        <link href="assets/plugins/toaster/toastr.min.css" rel="stylesheet" />
-        <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
-        <link href="assets/plugins/flag-icons/css/flag-icon.min.css" rel="stylesheet" />
-        <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
-        <link href="assets/plugins/ladda/ladda.min.css" rel="stylesheet" />
-        <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
-        <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
-        <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
-        <link href="/assets/favicon/favicon-16x16.png" rel="shortcut icon" />
-        <script src="assets/plugins/nprogress/nprogress.js"></script>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MSI - ADMIN</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/plugins/toaster/toastr.min.css" rel="stylesheet" />
+    <link href="assets/plugins/nprogress/nprogress.css" rel="stylesheet" />
+    <link
+      href="assets/plugins/flag-icons/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css"
+      rel="stylesheet"
+    />
+    <link href="assets/plugins/ladda/ladda.min.css" rel="stylesheet" />
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+    <link
+      href="assets/plugins/daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+    <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
+    <link href="/assets/favicon/favicon-16x16.png" rel="shortcut icon" />
+   <script src="assets/plugins/nprogress/nprogress.js"></script>
+  </head>
 
-
-<body class="sidebar-fixed sidebar-dark header-light header-fixed" id="body">
+  <body class="sidebar-fixed sidebar-dark header-light header-fixed" id="body">
     <script>
-        NProgress.configure({
-            showSpinner: false
-        });
-        NProgress.start();
+      NProgress.configure({
+        showSpinner: false,
+      });
+      NProgress.start();
     </script>
 
     <div class="mobile-sticky-body-overlay"></div>
 
     <div class="wrapper">
-        <aside class="left-sidebar bg-sidebar">
-            <div id="sidebar" class="sidebar sidebar-with-footer">
-                <!-- Aplication Brand -->
-                <div class="app-brand" style="background-color: red;">
-                    <a href="/index.html">
-                        <img src="https://upload.wikimedia.org/wikipedia/vi/archive/6/6c/20201107090148%21Msi_logo.png" alt="" class="img-fluid">
-                        <span class="brand-name">ADMIN</span>
-                    </a>
-                </div>
-                <!-- begin sidebar scrollbar -->
-                <div class="sidebar-scrollbar">
-                    <!-- sidebar menu -->
-                    <ul class="nav sidebar-inner" id="sidebar-menu">
-                        <li class="has-sub active expand">
-                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
-                                <i class="mdi mdi-view-dashboard-outline"></i>
-                                <span class="nav-text">Dashboard</span> <b class="caret"></b>
-                            </a>
-                            <ul class="collapse show" id="dashboard" data-parent="#sidebar-menu">
-                                <div class="sub-menu">
-                                    <li class="active">
-                                        <a class="sidenav-item-link" href="index.html">
-                                            <span class="nav-text">Thống Kê</span>
-                                        </a>
-                                    </li>
+      <aside class="left-sidebar bg-sidebar">
+        <div id="sidebar" class="sidebar sidebar-with-footer">
+          <!-- Aplication Brand -->
+          <div class="app-brand" style="background-color: red">
+            <a href="/index.html">
+              <img
+                src="https://storage-asset.msi.com/event/2021/tw/gaming-offical-home/images/msilogo.png"
+                alt=""
+                class="img-fluid float-start"
+              />
+              <span class="brand-name">ADMIN</span>
+            </a>
+          </div>
+          <!-- begin sidebar scrollbar -->
+          <div class="sidebar-scrollbar">
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+              <li class="has-sub active expand">
+                <a
+                  class="sidenav-item-link"
+                  href="javascript:void(0)"
+                  data-toggle="collapse"
+                  data-target="#dashboard"
+                  aria-expanded="false"
+                  aria-controls="dashboard"
+                >
+                  <i class="mdi mdi-view-dashboard-outline"></i>
+                  <span class="nav-text">Dashboard</span> <b class="caret"></b>
+                </a>
+                <ul
+                  class="collapse show"
+                  id="dashboard"
+                  data-parent="#sidebar-menu"
+                >
+                  <div class="sub-menu">
+                    <li class="active">
+                      <a class="sidenav-item-link" href="index.html">
+                        <span class="nav-text">Thống Kê</span>
+                      </a>
+                    </li>
 
-                                    <li>
-                                        <a class="sidenav-item-link" href="./product.html">
-                                            <span class="nav-text">Thêm Sản Phẩm</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="sidenav-item-link" href="./listProduct.html">
-                                            <span class="nav-text">Danh Sách Sản Phẩm</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="sidenav-item-link" href="./user-profile.html">
-                                            <span class="nav-text">Sửa thông tin tài khoản</span>
-                                        </a>
-                                    </li>
-                                </div>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                      <a class="sidenav-item-link" href="./product.html">
+                        <span class="nav-text">Thêm Sản Phẩm</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="sidenav-item-link" href="./listProduct.html">
+                        <span class="nav-text">Danh Sách Sản Phẩm</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="sidenav-item-link" href="./user-profile.html">
+                        <span class="nav-text">Sửa thông tin tài khoản</span>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-                <hr class="separator" />
-            </div>
-        </aside>
-        <div class="page-wrapper">
-            <!-- Header -->
-            <header class="main-header " id="header">
-                <nav class="navbar navbar-static-top navbar-expand-lg">
-                    <!-- Sidebar toggle button -->
-                    <button id="sidebar-toggler" class="sidebar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-                    <!-- search form -->
-                    <div class="search-form d-none d-lg-inline-block">
-                        <div class="input-group">
-                            <button type="button" name="search" id="search-btn" class="btn btn-flat">
-                    <i class="mdi mdi-magnify"></i>
-                  </button>
-                            <input type="text" name="query" id="search-input" class="form-control" placeholder="'button', 'chart' etc." autofocus autocomplete="off" />
-                        </div>
-                        <div id="search-results-container">
-                            <ul id="search-results"></ul>
-                        </div>
-                    </div>
-
-                    <div class="navbar-right ">
-                        <ul class="nav navbar-nav">
-                            <!-- User Account -->
-                            <li class="dropdown user-menu">
-                                <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                      <img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" class="user-image" alt="User Image" />
-                      <span class="d-none d-lg-inline-block" id="nameCurrent"></span>
-                  </button>
-                                <ul class="dropdown-menu dropdown-menu-right" style="width: 285px;">
-                                    <!-- User image -->
-                                    <li class="dropdown-header">
-                                        <img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" class="img-circle" alt="User Image" />
-                                        <div class="d-inline-block">
-                                            <small class="pt-1" id="emailCurrent"></small>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="user-profile.html">
-                                            <i class="mdi mdi-account"></i> My Profile
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-footer">
-                                        <a href="signin.html" onclick="logout()">
-                                            <i class="mdi mdi-logout"></i> Log Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        </li>
-                        </ul>
-                    </div>
-                </nav>
-
-
-            </header>
-
-
-            <div class="content-wrapper">
-                <div class="content">
-                    <div class="bg-white border rounded">
-                        <div class="card card-table-border-none" id="recent-orders">
-                            <div class="card-header justify-content-between">
-                              <h2>Recent Orders</h2>
-                              <div class="date-range-report ">
-                                <span></span>
-                              </div>
-                            </div>
-                            <div class="card-body pt-0 pb-5">
-                              <table class="table card-table table-responsive table-responsive-large" style="width:100%">
-                                <thead>
-                                  <tr>
-                                    <th>ID SẢN PHẨM</th>
-                                    <th>TÊN SẢN PHẨM</th>
-                                    <th class="d-none d-md-table-cell">GIÁ SẢN PHẨM</th>
-                                    <th class="d-none d-md-table-cell">HÌNH ẢNH SẢN PHẨM</th>
-                                    <th colspan="2">Action</th>
-                                    <th></th>
-                                  </tr>
-                                </thead>
-                                <tbody id="productListing">
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
+          <hr class="separator" />
         </div>
+      </aside>
+      <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header" id="header">
+          <nav class="navbar navbar-static-top navbar-expand-lg">
+            <!-- Sidebar toggle button -->
+            <button id="sidebar-toggler" class="sidebar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <!-- search form -->
+            <div class="search-form d-none d-lg-inline-block">
+              <div class="input-group">
+                <button
+                  type="button"
+                  name="search"
+                  id="search-btn"
+                  class="btn btn-flat"
+                >
+                  <i class="mdi mdi-magnify"></i>
+                </button>
+                <input
+                  type="text"
+                  name="query"
+                  id="search-input"
+                  class="form-control"
+                  placeholder="'button', 'chart' etc."
+                  autofocus
+                  autocomplete="off"
+                />
+              </div>
+              <div id="search-results-container">
+                <ul id="search-results"></ul>
+              </div>
+            </div>
+
+            <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                <!-- User Account -->
+                <li class="dropdown user-menu">
+                  <button
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                  >
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png"
+                      class="user-image"
+                      alt="User Image"
+                    />
+                    <span
+                      class="d-none d-lg-inline-block"
+                      id="nameCurrent"
+                    ></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-right"
+                    style="width: 285px"
+                  >
+                    <!-- User image -->
+                    <li class="dropdown-header">
+                      <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png"
+                        class="img-circle"
+                        alt="User Image"
+                      />
+                      <div class="d-inline-block">
+                        <small class="pt-1" id="emailCurrent"></small>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="user-profile.html">
+                        <i class="mdi mdi-account"></i> My Profile
+                      </a>
+                    </li>
+                    <li class="dropdown-footer">
+                      <a href="signin.html" onclick="logout()">
+                        <i class="mdi mdi-logout"></i> Log Out
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="content-wrapper">
+          <div class="content">
+            <div class="bg-white border rounded">
+              <div class="card card-table-border-none" id="recent-orders">
+                <div class="card-header justify-content-between">
+                  <h2>DANH SÁCH SẢN PHẨM</h2>
+                  <div class="date-range-report">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="card-body pt-0 pb-5">
+                  <table
+                    class="
+                      table
+                      card-table
+                      table-responsive table-responsive-large
+                    "
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr class="text-nowrap">
+                        <th>ID SẢN PHẨM</th>
+                        <th>TÊN SẢN PHẨM</th>
+                        <th class="d-none d-md-table-cell">GIÁ SẢN PHẨM</th>
+                        <th class="d-none d-md-table-cell">
+                          HÌNH ẢNH SẢN PHẨM
+                        </th>
+                        <th colspan="2">ACTION</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="productListing"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-           var listProduct = [];
-           fetch("http://localhost:3000/product")
-            .then(res => res.json())
-            .then(data => {
-               listProduct = [...data],
-                product(listProduct)
-            })
-            .then(() => {
-                var z = document.querySelectorAll(".delete-product-button");
-                z.forEach(item => {
-                    item.addEventListener('click', e => {
-                        var id = e.target.getAttribute("data-id");
-                        fetch(`http://localhost:3000/product/${id}`,{method: 'DELETE',})
-                            .then(() => {
-                                location.reload();
-                            })
-                    })
-                })
-            })   
-           function product(list){
-               var html = list.map((product) => {
-                productListing.insertAdjacentHTML(
-                    "afterbegin",
-                    `
+      var listProduct = [];
+      fetch("http://localhost:3000/product")
+        .then((res) => res.json())
+        .then((data) => {
+          (listProduct = [...data]);
+           product(listProduct.slice().reverse());
+        })
+        .then(() => {
+          var z = document.querySelectorAll(".delete-product-button");
+          z.forEach((item) => {
+            item.addEventListener("click", (e) => {
+              var id = e.target.getAttribute("data-id");
+              fetch(`http://localhost:3000/product/${id}`, {
+                method: "DELETE",
+              }).then(() => {
+                location.reload();
+              });
+            });
+          });
+        });
+      function product(list) {
+        var html = list.map((product) => {
+          productListing.insertAdjacentHTML(
+            "afterbegin",
+            `
                     <tr>
                         <td >${product.id}</td>
                         <td >
                         <a class="text-dark" href="">${product.title}</a>
                         </td>
-                        <td class="d-none d-md-table-cell">${product.price}</td>
+                        <td class="d-none d-md-table-cell">$ ${
+                          product.price
+                        }</td>
                         <td class="d-none d-md-table-cell">
                         <img src=${product.image} class="img-fluid"></img>
                             </td>
                         <td class="d-none d-md-table-cell"></td>
                         <td >
                             <a href=${`./editProduct.html?id=${product.id}`} type="button" class="btn btn-danger">SỬA</a>
-                            <button class="btn btn-danger delete-product-button" data-id="${product.id}">XOÁ</button>
+                            <button class="mt-3 btn btn-danger delete-product-button" data-id="${
+                              product.id
+                            }">XOÁ</button>
                         </td>
                        
                     </tr>
                     `
-                )
-               })
-           }
+          );
+        });
+      }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM"
+      defer
+    ></script>
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/toaster/toastr.min.js"></script>
@@ -239,7 +309,5 @@
     <script src="assets/js/map.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="../../assets/js/main.js"></script>
-</body>
+  </body>
 </html>
-
-

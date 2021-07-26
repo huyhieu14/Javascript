@@ -1,7 +1,7 @@
 {
   "product": [
     {
-      "id": 2,
+      "id": 1,
       "title": "Aegis RS 10TD-213US Gaming Desktop",
       "system": "Windows 10 Home",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
@@ -9,10 +9,11 @@
       "ram": "16GB DDR4 3000Mhz (8GB x 2)",
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
-      "price": "1199"
+      "price": "1199",
+      "category" : "Desktop"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "MEG Trident X 10TD-1282US Slim Gaming",
       "system": "Windows 10 Home",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
@@ -20,10 +21,11 @@
       "ram": "32GB DDR4 3000 MHz (2 x 16GB)",
       "storage": "1TB M.2 NVMe SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
-      "price": "2399"
+      "price": "2399",
+      "category" : "Laptop"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "MPG Trident A 10TD-1420US Slim Gaming",
       "system": "Windows 10 Home",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
@@ -31,7 +33,9 @@
       "ram": "16GB DDR4 3000Mhz (8GB x 2)",
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
-      "price": "1999"
+      "price": "1999",
+      "category" : "Laptop"
+
     },
     {
       "title": "GF75 Thin 10SDR-455 17.3 FHD 123",
@@ -42,7 +46,8 @@
       "storage": "1TB 2.5 SATA SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-160x160.png",
       "price": "1099",
-      "id": 5
+      "id": 4,
+      "category" : "Desktop"
     }
   ]
 }
