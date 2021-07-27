@@ -1,547 +1,1063 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSI VIETNAM</title>
-    <link rel="shortcut icon" href="assets/favicon/favicon-16x16.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
-    <link href="http://fonts.cdnfonts.com/css/dinpro-regular" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/modal.css">
-</head>
+    <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/dinpro-regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/modal.css" />
+  </head>
 
-<body>
+  <body>
     <header class="container-fluid header p-0">
-        <nav class="nav-header">
-            <div class="header-lg justify-content-between d-xl-flex d-none">
-                <ul class="header-left list-unstyled d-flex ms-xl-4">
-                    <li class="logo-homepage">
-                        <a href="index.html"><img src="/assets/img/logo-msi/logo.png" alt="" style="max-width: 95px;"></a>
-                    </li>
-                    <div id="store-link" class="h-100">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5">
-                                <a href="./assets/html/store_main.html" class="fs-4"> CỬA HÀNG</a>
-                            </li>
-                        </div>
-                    </div>
-                    <div id="product-link">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                SẢN PHẨM
-                            </li>
-                            <ul class="dropdown-menu pt-3" aria-labelledby="dropdownMenuLink">
-                                <div class="d-flex">
-                                    <ul class="list-unstyled border-end">
-                                        <li><a class="dropdown-item" href="#">Laptop<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Máy tính để bàn<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Màn hình<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Card đồ hoạ<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Bo mạch chủ<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Vỏ máy tính & Components<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Thiết bị Gaming<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Bộ sưu tập rồng<i class="far fa-angle-right float-end"></i></a></li>
-                                    </ul>
-                                    <ul class="dropdown-menu2 border-end list-unstyled" aria-labelledby="dropdownMenuLink">
-                                        <li><a href=""><b>Gaming Series</b></a></li>
-                                        <li><a href="">GS Stealth Series</a></li>
-                                        <li><a href="">GE Raider Series</a></li>
-                                        <li><a href="">GP Leopard Series</a></li>
-                                        <li><a href="">Pulse / Crosshair GL Series</a></li>
-                                        <li><a href="">Katana / Sword GF Thin Series</a></li>
-                                        <li><a href="">Alpha Series</a></li>
-                                        <li><a href="">Bravo Series</a></li>
-                                    </ul>
-                                    <ul class="dropdown-menu2 border-end text-center p-4" aria-labelledby="dropdownMenuLink">
-                                        <img src="/assets/img/product/navigation_162142616560a4fff5cf73e8.58470867.png" alt="" class="img-fluid float-start">
-                                        <div class="text-drop1">Laptop chơi game</div>
-                                        <div class="text-drop2">Dành cho các game thủ</div>
-                                        <a href="">Show more</a>
-                                    </ul>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="solutions-link">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
-                                GIẢI PHÁP ODM
-                            </li>
-                            <ul class="dropdown-menu pt-3" aria-labelledby="dropdownMenuLink2">
-                                <li><a class="dropdown-item" href="#">Server & Networking</a></li>
-                                <li><a class="dropdown-item" href="#">IPC</a></li>
-                                <li><a class="dropdown-item" href="#">Automotive</a></li>
-                                <li><a class="dropdown-item" href="#">Rugged Tablet</a></li>
-                                <li><a class="dropdown-item" href="#">Funtoro</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="community-link">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5" href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">
-                                CỘNG ĐỒNG
-                            </li>
-                            <ul class="dropdown-menu pt-3" aria-labelledby="dropdownMenuLink3">
-                                <li><a class="dropdown-item" href="#">MSI Insider</a></li>
-                                <li><a class="dropdown-item" href="#">MSI Reward Program</a></li>
-                                <li><a class="dropdown-item" href="#">Videos</a></li>
-                                <li><a class="dropdown-item" href="#">Gaming Teams</a></li>
-                                <li><a class="dropdown-item" href="#">Forums</a></li>
-                                <li><a class="dropdown-item" href="#">Social Media</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="wnew-link">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5" href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-expanded="false">
-                                CÓ GÌ MỚI
-                            </li>
-                            <ul class="dropdown-menu pt-3" aria-labelledby="dropdownMenuLink4">
-                                <div class="d-flex">
-                                    <ul class="list-unstyled border-end p-3">
-                                        <li><a class="dropdown-item" href="#">Showcase Arenap<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Khuyến mãi<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Upcoming Events<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Blog Articles<i class="far fa-angle-right float-end"></i></a></li>
-                                        <li><a class="dropdown-item" href="#">Customer Stories<i class="far fa-angle-right float-end"></i></a></li>
-                                    </ul>
-                                    <ul class="dropdown-menu3 border-end text-center p-4 list-unstyled" aria-labelledby="dropdownMenuLink">
-                                        <li>
-                                            <span class="text-drop1 float-start">Laptop chơi game</span>
-                                            <a href="" class="float-end">Show more</a>
-                                        </li>
-                                        <li class="row p-3">
-                                            <div class="col-8">
-                                                <img src="/assets/img/Sale/promotion_15819283205e4a4f80662e3.jpg" alt="" class="img-fluid p-1">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <img src="/assets/img/Sale/promotion_161968685094cf2ca303cc742a3f4773f31ccbd1c7.jpeg" alt="" class="img-fluid p-1">
-                                                <img src="/assets/img/Sale/promotion_1624531034dd6634d7e4e3a022fd65de48b049ba6e.jpeg" alt="" class="img-fluid p-1">
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="serice-link">
-                        <div class="dropdown">
-                            <li class="dropdown-toggle fs-5" href="#" role="button">
-                                HỖ TRỢ
-                            </li>
-                        </div>
-                    </div>
-                </ul>
-                <ul class="header-right d-flex list-unstyled me-xxl-5">
-                    <li id="userCurrent" class="name-acc fw-bold">
-                        <div class="dropdown ">
-                            <span id=nameCurrent></span>
-                            <div class="dropdown-content">
-                                <button type="button" class="btn user-btn" id="myBtn">
-                                    Xem Thông Tin
-                                </button>
-                                <div id="myModal" class="modal">
-                                    <!-- Modal content -->
-                                    <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <div class="container rounded bg-white">
-                                            <div class="row">
-                                                <div class="col-md-3 border-right">
-                                                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
-                                                        <span class="font-weight-bold">Edogaru</span><span class="text-black-50" id="mailCurrent"></span><span> </span></div>
-                                                </div>
-                                                <div class="col-md-9 border-right">
-                                                    <div class="p-3 py-5">
-                                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                                            <h4 class="text-right">Profile Settings</h4>
-                                                        </div>
-                                                        <div class="row mt-2">
-                                                            <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                                                            <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
-                                                        </div>
-                                                        <div class="row mt-3">
-                                                            <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
-                                                            <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value=""></div>
-                                                            <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                                                            <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                                                        </div>
-                                                        <div class="row mt-3">
-                                                            <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                                                            <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
-                                                        </div>
-                                                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="" onclick="logout()">
-                                    <p>Đăng Xuất</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="usericon">
-                        <a href="/assets/html/login.html"><img src="/assets/icon/user.png" alt=""></a>
-                    </li>
-                    <li id="pinicon" class="d-xl-block d-none pin-icon">
-                        <img src="/assets/icon/pin.png" alt="">
-                    </li>
-                    <div class="searchbar">
-                        <input class="search_input" type="text" name="" placeholder="Search...">
-                        <a href="#" class="search_icon"><i class="far fa-search"></i></a>
-                    </div>
-
-                </ul>
+      <nav class="nav-header">
+        <div class="header-lg justify-content-between d-xl-flex d-none">
+          <ul class="header-left list-unstyled d-flex ms-xl-4">
+            <li class="logo-homepage">
+              <a href="index.html"
+                ><img
+                  src="/assets/img/logo-msi/logo.png"
+                  alt=""
+                  style="max-width: 95px"
+              /></a>
+            </li>
+            <div id="store-link" class="h-100">
+              <div class="dropdown">
+                <li class="dropdown-toggle fs-5">
+                  <a href="./assets/html/store_main.html" class="fs-4">
+                    CỬA HÀNG</a
+                  >
+                </li>
+              </div>
             </div>
-            <div class="header-sm d-xl-none d-block">
-                <!-- offcanvas -->
-                <div class="offcanvas offcanvas-start mt-5" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                    <div class="offcanvas-body">
-                        <div class="accordion accordion-flush fw-bold" id="accordionFlushExample">
-                            <div class="accordion-i">
-                                <div class="accordion-body"><a href="">CỬA HÀNG</a></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="flush-heading1">
-                                    <span class="accordion-button collapsed" type="" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
-                                  SẢN PHẨM
-                                    </span>
-                                </h5>
-                                <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li><a href="">Laptop</a></li>
-                                            <li><a href="">Máy tính để bàn</a></li>
-                                            <li><a href="">Màn hình</a></li>
-                                            <li><a href="">Card đồ hoạ</a></li>
-                                            <li><a href="">Bo mạch chủ</a></li>
-                                            <li><a href="">Vỏ máy tính & Components</a></li>
-                                            <li><a href="">Thiết bị Gaming</a></li>
-                                            <li><a href="">Bộ sưu tập rồng</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="flush-heading2">
-                                    <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-                                  GIẢI PHÁP ODM
-                                    </span>
-                                </h5>
-                                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li><a href="">Server & Networking</a></li>
-                                            <li><a href="">IPC</a></li>
-                                            <li><a href="">Automotive</a></li>
-                                            <li><a href="">Rugged Tablet</a></li>
-                                            <li><a href="">Funtoro</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="flush-heading3">
-                                    <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-                                  CỘNG ĐỒNG
-                                    </span>
-                                </h5>
-                                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li><a href="">MSI Insider</a></li>
-                                            <li><a href="">MSI Reward Program</a></li>
-                                            <li><a href="">Videos</a></li>
-                                            <li><a href="">Gaming Teams</a></li>
-                                            <li><a href="">Forums</a></li>
-                                            <li><a href="">Social Media</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="flush-heading4">
-                                    <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-                                  CÓ GÌ MỚI
-                                    </span>
-                                </h5>
-                                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li><a href="">Showcase Arena</a></li>
-                                            <li><a href="">Khuyến mãi</a></li>
-                                            <li><a href="">Upcoming Events</a></li>
-                                            <li><a href="">Blog Articles</a></li>
-                                            <li><a href="">Customer Stories</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-i">
-                                <div class="accordion-body"><a href="">HỖ TRỢ</a></div>
-                            </div>
-                            <div class="accordion-i">
-                                <div class="accordion-body"><a href="">MUA Ở ĐÂU?</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end offcanvas -->
-                <div class="h-100 align-self-center d-flex justify-content-between pt-2 ps-2">
-                    <div class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <div class="logo-sm">
-                        <img src="/assets/img/logo-msi/logo.png" alt="">
-                    </div>
-                    <ul class="d-flex list-unstyled me-xxl-5">
-                        <li id="usericon2">
-                            <img src="/assets/icon/user.png" alt="">
-                        </li>
-                        <li id="loupeicon2">
-                            <img src="/assets/icon/loupe.png" alt="">
-                        </li>
+            <div id="product-link">
+              <div class="dropdown">
+                <li
+                  class="dropdown-toggle fs-5"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SẢN PHẨM
+                </li>
+                <ul
+                  class="dropdown-menu pt-3"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="d-flex">
+                    <ul class="list-unstyled border-end">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Laptop<i class="far fa-angle-right float-end"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Máy tính để bàn<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Màn hình<i class="far fa-angle-right float-end"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Card đồ hoạ<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Bo mạch chủ<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Vỏ máy tính & Components<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Thiết bị Gaming<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Bộ sưu tập rồng<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
                     </ul>
-                </div>
+                    <ul
+                      class="dropdown-menu2 border-end list-unstyled"
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <li>
+                        <a href=""><b>Gaming Series</b></a>
+                      </li>
+                      <li><a href="">GS Stealth Series</a></li>
+                      <li><a href="">GE Raider Series</a></li>
+                      <li><a href="">GP Leopard Series</a></li>
+                      <li><a href="">Pulse / Crosshair GL Series</a></li>
+                      <li><a href="">Katana / Sword GF Thin Series</a></li>
+                      <li><a href="">Alpha Series</a></li>
+                      <li><a href="">Bravo Series</a></li>
+                    </ul>
+                    <ul
+                      class="dropdown-menu2 border-end text-center p-4"
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <img
+                        src="/assets/img/product/navigation_162142616560a4fff5cf73e8.58470867.png"
+                        alt=""
+                        class="img-fluid float-start"
+                      />
+                      <div class="text-drop1">Laptop chơi game</div>
+                      <div class="text-drop2">Dành cho các game thủ</div>
+                      <a href="">Show more</a>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
             </div>
-        </nav>
+            <div id="solutions-link">
+              <div class="dropdown">
+                <li
+                  class="dropdown-toggle fs-5"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GIẢI PHÁP ODM
+                </li>
+                <ul
+                  class="dropdown-menu pt-3"
+                  aria-labelledby="dropdownMenuLink2"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Server & Networking</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">IPC</a></li>
+                  <li><a class="dropdown-item" href="#">Automotive</a></li>
+                  <li><a class="dropdown-item" href="#">Rugged Tablet</a></li>
+                  <li><a class="dropdown-item" href="#">Funtoro</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="community-link">
+              <div class="dropdown">
+                <li
+                  class="dropdown-toggle fs-5"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CỘNG ĐỒNG
+                </li>
+                <ul
+                  class="dropdown-menu pt-3"
+                  aria-labelledby="dropdownMenuLink3"
+                >
+                  <li><a class="dropdown-item" href="#">MSI Insider</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">MSI Reward Program</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Videos</a></li>
+                  <li><a class="dropdown-item" href="#">Gaming Teams</a></li>
+                  <li><a class="dropdown-item" href="#">Forums</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="wnew-link">
+              <div class="dropdown">
+                <li
+                  class="dropdown-toggle fs-5"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CÓ GÌ MỚI
+                </li>
+                <ul
+                  class="dropdown-menu pt-3"
+                  aria-labelledby="dropdownMenuLink4"
+                >
+                  <div class="d-flex">
+                    <ul class="list-unstyled border-end p-3">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Showcase Arenap<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Khuyến mãi<i class="far fa-angle-right float-end"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Upcoming Events<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Blog Articles<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Customer Stories<i
+                            class="far fa-angle-right float-end"
+                          ></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul
+                      class="
+                        dropdown-menu3
+                        border-end
+                        text-center
+                        p-4
+                        list-unstyled
+                      "
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <li>
+                        <span class="text-drop1 float-start"
+                          >Laptop chơi game</span
+                        >
+                        <a href="" class="float-end">Show more</a>
+                      </li>
+                      <li class="row p-3">
+                        <div class="col-8">
+                          <img
+                            src="/assets/img/Sale/promotion_15819283205e4a4f80662e3.jpg"
+                            alt=""
+                            class="img-fluid p-1"
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="/assets/img/Sale/promotion_161968685094cf2ca303cc742a3f4773f31ccbd1c7.jpeg"
+                            alt=""
+                            class="img-fluid p-1"
+                          />
+                          <img
+                            src="/assets/img/Sale/promotion_1624531034dd6634d7e4e3a022fd65de48b049ba6e.jpeg"
+                            alt=""
+                            class="img-fluid p-1"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div id="serice-link">
+              <div class="dropdown">
+                <li class="dropdown-toggle fs-5" href="#" role="button">
+                  HỖ TRỢ
+                </li>
+              </div>
+            </div>
+          </ul>
+          <ul class="header-right d-flex list-unstyled me-xxl-5">
+            <li id="userCurrent" class="name-acc fw-bold">
+              <div class="dropdown">
+                <span id="nameCurrent"></span>
+                <div class="dropdown-content">
+                  <button type="button" class="btn user-btn" id="myBtn">
+                    Xem Thông Tin
+                  </button>
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="container rounded bg-white">
+                        <div class="row">
+                          <div class="col-md-3 border-right">
+                            <div
+                              class="
+                                d-flex
+                                flex-column
+                                align-items-center
+                                text-center
+                                p-3
+                                py-5
+                              "
+                            >
+                              <img
+                                class="rounded-circle mt-5"
+                                width="150px"
+                                src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+                              />
+                              <span class="font-weight-bold">Edogaru</span
+                              ><span
+                                class="text-black-50"
+                                id="mailCurrent"
+                              ></span
+                              ><span> </span>
+                            </div>
+                          </div>
+                          <div class="col-md-9 border-right">
+                            <div class="p-3 py-5">
+                              <div
+                                class="
+                                  d-flex
+                                  justify-content-between
+                                  align-items-center
+                                  mb-3
+                                "
+                              >
+                                <h4 class="text-right">Profile Settings</h4>
+                              </div>
+                              <div class="row mt-2">
+                                <div class="col-md-6">
+                                  <label class="labels">Name</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="first name"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label class="labels">Surname</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    value=""
+                                    placeholder="surname"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-12">
+                                  <label class="labels">Mobile Number</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="enter phone number"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="col-md-12">
+                                  <label class="labels">Address Line 1</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="enter address line 1"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="col-md-12">
+                                  <label class="labels">Address Line 2</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="enter address line 2"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="col-md-12">
+                                  <label class="labels">Postcode</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="enter address line 2"
+                                    value=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-6">
+                                  <label class="labels">Country</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="country"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label class="labels">State/Region</label
+                                  ><input
+                                    type="text"
+                                    class="form-control"
+                                    value=""
+                                    placeholder="state"
+                                  />
+                                </div>
+                              </div>
+                              <div class="mt-5 text-center">
+                                <button
+                                  class="btn btn-primary profile-button"
+                                  type="button"
+                                >
+                                  Save Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="" onclick="logout()">
+                    <p>Đăng Xuất</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li id="usericon">
+              <a href="/assets/html/login.html"
+                ><img src="/assets/icon/user.png" alt=""
+              /></a>
+            </li>
+            <li id="pinicon" class="d-xl-block d-none pin-icon">
+              <img src="/assets/icon/pin.png" alt="" />
+            </li>
+            <div class="searchbar">
+              <input
+                class="search_input"
+                type="text"
+                name=""
+                placeholder="Search..."
+              />
+              <a href="#" class="search_icon"><i class="far fa-search"></i></a>
+            </div>
+          </ul>
+        </div>
+        <div class="header-sm d-xl-none d-block">
+          <!-- offcanvas -->
+          <div
+            class="offcanvas offcanvas-start mt-5"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-body">
+              <div
+                class="accordion accordion-flush fw-bold"
+                id="accordionFlushExample"
+              >
+                <div class="accordion-i">
+                  <div class="accordion-body"><a href="">CỬA HÀNG</a></div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="flush-heading1">
+                    <span
+                      class="accordion-button collapsed"
+                      type=""
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse1"
+                    >
+                      SẢN PHẨM
+                    </span>
+                  </h5>
+                  <div
+                    id="flush-collapse1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading1"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li><a href="">Laptop</a></li>
+                        <li><a href="">Máy tính để bàn</a></li>
+                        <li><a href="">Màn hình</a></li>
+                        <li><a href="">Card đồ hoạ</a></li>
+                        <li><a href="">Bo mạch chủ</a></li>
+                        <li><a href="">Vỏ máy tính & Components</a></li>
+                        <li><a href="">Thiết bị Gaming</a></li>
+                        <li><a href="">Bộ sưu tập rồng</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="flush-heading2">
+                    <span
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse2"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse2"
+                    >
+                      GIẢI PHÁP ODM
+                    </span>
+                  </h5>
+                  <div
+                    id="flush-collapse2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading2"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li><a href="">Server & Networking</a></li>
+                        <li><a href="">IPC</a></li>
+                        <li><a href="">Automotive</a></li>
+                        <li><a href="">Rugged Tablet</a></li>
+                        <li><a href="">Funtoro</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="flush-heading3">
+                    <span
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse3"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse3"
+                    >
+                      CỘNG ĐỒNG
+                    </span>
+                  </h5>
+                  <div
+                    id="flush-collapse3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading3"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li><a href="">MSI Insider</a></li>
+                        <li><a href="">MSI Reward Program</a></li>
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">Gaming Teams</a></li>
+                        <li><a href="">Forums</a></li>
+                        <li><a href="">Social Media</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="flush-heading4">
+                    <span
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse4"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse4"
+                    >
+                      CÓ GÌ MỚI
+                    </span>
+                  </h5>
+                  <div
+                    id="flush-collapse4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-heading4"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li><a href="">Showcase Arena</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Upcoming Events</a></li>
+                        <li><a href="">Blog Articles</a></li>
+                        <li><a href="">Customer Stories</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-i">
+                  <div class="accordion-body"><a href="">HỖ TRỢ</a></div>
+                </div>
+                <div class="accordion-i">
+                  <div class="accordion-body"><a href="">MUA Ở ĐÂU?</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end offcanvas -->
+          <div
+            class="
+              h-100
+              align-self-center
+              d-flex
+              justify-content-between
+              pt-2
+              ps-2
+            "
+          >
+            <div
+              class=""
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+              onclick="myFunction(this)"
+            >
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="logo-sm">
+              <img src="/assets/img/logo-msi/logo.png" alt="" />
+            </div>
+            <ul class="d-flex list-unstyled me-xxl-5">
+              <li id="usericon2">
+                <img src="/assets/icon/user.png" alt="" />
+              </li>
+              <li id="loupeicon2">
+                <img src="/assets/icon/loupe.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid p-0 content">
-        <div class="slide-home">
-            <img src="https://storage-asset.msi.com/vn/picture/banner/banner_162503678206cc5558ad440ee0bf6d5de20d04f4c5.jpeg" alt="" class="img-fluid img-slide" id="imgSlide1">
-            <img src="https://storage-asset.msi.com/us/picture/banner/banner_16135860117cfc418eb1b76e862580b6a352f859f8.jpeg" alt="" class="img-fluid img-slide" id="imgSlide2">
-            <img src="https://storage-asset.msi.com/global/picture/banner/banner_1625037084a14b7f3fa3daec659905c713b7a92522.jpeg" alt="" class="img-fluid img-slide" id="imgSlide3">
-            <ul class="list-unstyled d-flex btn-slide">
-                <li id="slide1"></li>
-                <li id="slide2"></li>
-                <li id="slide3"></li>
-            </ul>
-        </div>
+      <div class="slide-home">
+        <img
+          src="https://storage-asset.msi.com/vn/picture/banner/banner_162503678206cc5558ad440ee0bf6d5de20d04f4c5.jpeg"
+          alt=""
+          class="img-fluid img-slide"
+          id="imgSlide1"
+        />
+        <img
+          src="https://storage-asset.msi.com/us/picture/banner/banner_16135860117cfc418eb1b76e862580b6a352f859f8.jpeg"
+          alt=""
+          class="img-fluid img-slide"
+          id="imgSlide2"
+        />
+        <img
+          src="https://storage-asset.msi.com/global/picture/banner/banner_1625037084a14b7f3fa3daec659905c713b7a92522.jpeg"
+          alt=""
+          class="img-fluid img-slide"
+          id="imgSlide3"
+        />
+        <ul class="list-unstyled d-flex btn-slide">
+          <li id="slide1"></li>
+          <li id="slide2"></li>
+          <li id="slide3"></li>
+        </ul>
+      </div>
     </div>
     <div class="container-fluid z pt-4 text-center p-0">
-        <div class="row m-0">
-            <div class="col-md-4 p-1 z2">
-                <img src="https://storage-asset.msi.com/global/picture/banner/banner_15991136025f5089828b81b.jpg" alt="" class="img-fluid img-1">
-                <div class="text-img">
-                    <h3>GeForce RTX™ 3090 GAMING X TRIO 24G</h3>
-                    <p>Play Hard, Stay Silent</p>
-                </div>
-            </div>
-            <div class="col-md-4 p-1 z2">
-                <img src="https://storage-asset.msi.com/us/picture/banner/banner_16207618443fd2fc6cc4471dcd7dce1cfb73717cdd.jpeg" alt="" class="img-fluid img-1">
-                <div class="text-img">
-                    <h3>GE76 Raider</h3>
-                    <p>LIGHT'EM UP</p>
-                </div>
-            </div>
-            <div class="col-md-4 p-1 z2">
-                <img src="https://storage-asset.msi.com/global/picture/banner/banner_1620107620e0e06b4e56da01e588c10243524508ce.jpeg" alt="" class="img-fluid img-1">
-                <div class="text-img">
-                    <h3>MEG Z590 UNIFY</h3>
-                    <p>Pure Black, Pure Performance</p>
-                </div>
-            </div>
+      <div class="row m-0">
+        <div class="col-md-4 p-1 z2">
+          <img
+            src="https://storage-asset.msi.com/global/picture/banner/banner_15991136025f5089828b81b.jpg"
+            alt=""
+            class="img-fluid img-1"
+          />
+          <div class="text-img">
+            <h3>GeForce RTX™ 3090 GAMING X TRIO 24G</h3>
+            <p>Play Hard, Stay Silent</p>
+          </div>
         </div>
-        <div class="row p-0 m-0">
-            <div class="col-12 p-0 z2">
-                <img src="https://storage-asset.msi.com/us/picture/banner/banner_162187159368d3dd13e63d65cb13c3931fb02f7b37.jpeg" alt="" class="img-fluid img-1">
-                <div class="text-img">
-
-                </div>
-            </div>
+        <div class="col-md-4 p-1 z2">
+          <img
+            src="https://storage-asset.msi.com/us/picture/banner/banner_16207618443fd2fc6cc4471dcd7dce1cfb73717cdd.jpeg"
+            alt=""
+            class="img-fluid img-1"
+          />
+          <div class="text-img">
+            <h3>GE76 Raider</h3>
+            <p>LIGHT'EM UP</p>
+          </div>
         </div>
+        <div class="col-md-4 p-1 z2">
+          <img
+            src="https://storage-asset.msi.com/global/picture/banner/banner_1620107620e0e06b4e56da01e588c10243524508ce.jpeg"
+            alt=""
+            class="img-fluid img-1"
+          />
+          <div class="text-img">
+            <h3>MEG Z590 UNIFY</h3>
+            <p>Pure Black, Pure Performance</p>
+          </div>
+        </div>
+      </div>
+      <div class="row p-0 m-0">
+        <div class="col-12 p-0 z2">
+          <img
+            src="https://storage-asset.msi.com/us/picture/banner/banner_162187159368d3dd13e63d65cb13c3931fb02f7b37.jpeg"
+            alt=""
+            class="img-fluid img-1"
+          />
+          <div class="text-img"></div>
+        </div>
+      </div>
     </div>
     <div class="container-fluid p-0">
-        <div class="row m-0">
-            <div class="col-md-6 p-1 z3 text-center">
-                <div class="service-head">
-                    <img src="https://storage-asset.msi.com/frontend/imgs/icon_poductRegistration.svg" alt="" class="img-fluid">
-                    <h3>Product Registration</h3>
-                    <p>To enjoy a host of benefits, promotions and events</p>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/product_registration.jpg" alt="" class="img-fluid" style="height:25rem; object-fit: cover;">
-            </div>
-            <div class="col-md-6 p-1 z3 text-center ">
-                <div class="service-head">
-                    <img src="https://storage-asset.msi.com/frontend/imgs/icon_support.svg" alt="" class="img-fluid">
-                    <h3>Support</h3>
-                    <p>Customized services tailored for you.</p>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/support_service_location.jpg" alt="" class="img-fluid" style="height:25rem; object-fit: cover;">
-            </div>
-            <div class="col-md-3 p-1 z3">
-                <div class="service-head">
-                    <h3>MSI Forum</h3>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/forum.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 p-1 z3">
-                <div class="service-head">
-                    <h3>MSI Reward Program</h3>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/reward.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 p-1 z3">
-                <div class="service-head">
-                    <h3>Video</h3>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/video.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 p-1 z3">
-                <div class="service-head">
-                    <h3>MSI Insider</h3>
-                </div>
-                <img src="https://storage-asset.msi.com/frontend/imgs/insider.jpg" alt="" class="img-fluid">
-            </div>
+      <div class="row m-0">
+        <div class="col-md-6 p-1 z3 text-center">
+          <div class="service-head">
+            <img
+              src="https://storage-asset.msi.com/frontend/imgs/icon_poductRegistration.svg"
+              alt=""
+              class="img-fluid"
+            />
+            <h3>Product Registration</h3>
+            <p>To enjoy a host of benefits, promotions and events</p>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/product_registration.jpg"
+            alt=""
+            class="img-fluid"
+            style="height: 25rem; object-fit: cover"
+          />
         </div>
+        <div class="col-md-6 p-1 z3 text-center">
+          <div class="service-head">
+            <img
+              src="https://storage-asset.msi.com/frontend/imgs/icon_support.svg"
+              alt=""
+              class="img-fluid"
+            />
+            <h3>Support</h3>
+            <p>Customized services tailored for you.</p>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/support_service_location.jpg"
+            alt=""
+            class="img-fluid"
+            style="height: 25rem; object-fit: cover"
+          />
+        </div>
+        <div class="col-md-3 p-1 z3">
+          <div class="service-head">
+            <h3>MSI Forum</h3>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/forum.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 p-1 z3">
+          <div class="service-head">
+            <h3>MSI Reward Program</h3>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/reward.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 p-1 z3">
+          <div class="service-head">
+            <h3>Video</h3>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/video.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 p-1 z3">
+          <div class="service-head">
+            <h3>MSI Insider</h3>
+          </div>
+          <img
+            src="https://storage-asset.msi.com/frontend/imgs/insider.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
     </div>
     <footer class="container-fluid p-0 pt-5 d-inline-block">
-        <div class="container-footer-sm d-block d-xl-none">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <ul class="">
-                            <h5><a href="">CỘNG ĐỒNG</a></h5>
-                            <li><a href="">Chương trình tích điểm thưởng</a></li>
-                            <li><a href="">Diễn đàn</a></li>
-                            <li>
-                                <a href="">Mạng xã hội</a></li>
-                            <li>
-                                <a href="">Video</a></li>
-                            <li>
-                                <a href="">Đội game</a></li>
-                            <li>
-                                <a href="">Blog</a></li>
-                            <li>
-                                <a href="">Chia sẽ từ khách hàng</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-                            well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                            though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
-                            as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                            though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
+      <div class="container-footer-sm d-block d-xl-none">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <ul class="">
+                <h5><a href="">CỘNG ĐỒNG</a></h5>
+                <li><a href="">Chương trình tích điểm thưởng</a></li>
+                <li><a href="">Diễn đàn</a></li>
+                <li>
+                  <a href="">Mạng xã hội</a>
+                </li>
+                <li>
+                  <a href="">Video</a>
+                </li>
+                <li>
+                  <a href="">Đội game</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+                <li>
+                  <a href="">Chia sẽ từ khách hàng</a>
+                </li>
+              </ul>
             </div>
-        </div>
-        <div class="container-footer d-none d-xl-block p-0 ">
-            <nav class="nav-shortcut d-flex row">
-                <ul class=" col-md-2">
-                    <h5><a href="">CỘNG ĐỒNG</a></h5>
-                    <li><a href="">Chương trình tích điểm thưởng</a></li>
-                    <li><a href="">Diễn đàn</a></li>
-                    <li>
-                        <a href="">Mạng xã hội</a></li>
-                    <li>
-                        <a href="">Video</a></li>
-                    <li>
-                        <a href="">Đội game</a></li>
-                    <li>
-                        <a href="">Blog</a></li>
-                    <li>
-                        <a href="">Chia sẽ từ khách hàng</a></li>
-                </ul>
-                <ul class="col-md-2">
-                    <h5><a href="">HỖ TRỢ</a></h5>
-                    <li><a href="">Tải xuống</a></li>
-                    <li><a href="">Trung tâm thành viên</a></li>
-                    <li><a href="">Chăm sóc khách hàng</a></li>
-                    <li><a href="">Địa chỉ trung tâm bảo hành</a></li>
-                    <li><a href="">Bảo hành</a></li>
-                </ul>
-                <ul class="col-md-2">
-                    <h5><a href="">TIN TỨC</a></h5>
-                    <li><a href="">Tin tức</a></li>
-                    <li><a href="">Giải thưởng</a></li>
-                    <li><a href="">RSS</a></li>
-                </ul>
-                <ul class="col-md-2">
-                    <h5><a href="">TRUYỀN THÔNG</a></h5>
-                    <li><a href="">Brochure</a></li>
-                    <li><a href="">Hình nền</a></li>
-                    <li><a href="">Ứng đụng của MSI</a></li>
-                </ul>
-                <ul class="col-md-2">
-                    <h5><a href="">VỀ MSI</a></h5>
-                    <li><a href="">Tầm nhìn của MSI</a></li>
-                    <li><a href="">Mission And Vision</a></li>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li><a href="">Thông tin cho nhà đầu tư</a></li>
-                    <li><a href="">Không ngừng quảng cáo</a></li>
-                    <li><a href="">CSR</a></li>
-                </ul>
-            </nav>
-        </div>
-        <nav class="nav-infor d-flex border-top pt-4">
-            <div class="row m-auto">
-                <div class="col-xl-6 p-0">
-                    <img src="https://storage-asset.msi.com/frontend/imgs/logo-footer.png" alt="" class="img-fluid">
-                    <span>Copyright © 2021 Micro-Star INT'L CO., LTD. All rights reserved.</span>
-                </div>
-                <ul class="d-flex col-xl-6 justify-content-end">
-                    <li><a href="">Cookie Policy</a></li>
-                    <li><a href="">Chính sách bảo vệ thông tin</a></li>
-                    <li><a href="">Điều khoản sử dụng</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                    <li>
-                        <a href=""><img src="https://www.msi.com/images/front/global.png"> Vietnam/Tiếng Việt</a>
-                    </li>
-                </ul>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer d-none d-xl-block p-0">
+        <nav class="nav-shortcut d-flex row">
+          <ul class="col-md-2">
+            <h5><a href="">CỘNG ĐỒNG</a></h5>
+            <li><a href="">Chương trình tích điểm thưởng</a></li>
+            <li><a href="">Diễn đàn</a></li>
+            <li>
+              <a href="">Mạng xã hội</a>
+            </li>
+            <li>
+              <a href="">Video</a>
+            </li>
+            <li>
+              <a href="">Đội game</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Chia sẽ từ khách hàng</a>
+            </li>
+          </ul>
+          <ul class="col-md-2">
+            <h5><a href="">HỖ TRỢ</a></h5>
+            <li><a href="">Tải xuống</a></li>
+            <li><a href="">Trung tâm thành viên</a></li>
+            <li><a href="">Chăm sóc khách hàng</a></li>
+            <li><a href="">Địa chỉ trung tâm bảo hành</a></li>
+            <li><a href="">Bảo hành</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <h5><a href="">TIN TỨC</a></h5>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Giải thưởng</a></li>
+            <li><a href="">RSS</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <h5><a href="">TRUYỀN THÔNG</a></h5>
+            <li><a href="">Brochure</a></li>
+            <li><a href="">Hình nền</a></li>
+            <li><a href="">Ứng đụng của MSI</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <h5><a href="">VỀ MSI</a></h5>
+            <li><a href="">Tầm nhìn của MSI</a></li>
+            <li><a href="">Mission And Vision</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Thông tin cho nhà đầu tư</a></li>
+            <li><a href="">Không ngừng quảng cáo</a></li>
+            <li><a href="">CSR</a></li>
+          </ul>
         </nav>
+      </div>
+      <nav class="nav-infor d-flex border-top pt-4">
+        <div class="row m-auto">
+          <div class="col-xl-6 p-0">
+            <img
+              src="https://storage-asset.msi.com/frontend/imgs/logo-footer.png"
+              alt=""
+              class="img-fluid"
+            />
+            <span
+              >Copyright © 2021 Micro-Star INT'L CO., LTD. All rights
+              reserved.</span
+            >
+          </div>
+          <ul class="d-flex col-xl-6 justify-content-end">
+            <li><a href="">Cookie Policy</a></li>
+            <li><a href="">Chính sách bảo vệ thông tin</a></li>
+            <li><a href="">Điều khoản sử dụng</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li>
+              <a href=""
+                ><img src="https://www.msi.com/images/front/global.png" />
+                Vietnam/Tiếng Việt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </footer>
     <div id="triangle-bottomleft">
-        <div id="icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72.5 72.5" enable-background="new 0 0 72.5 72.5" xml:space="preserve"><g id="triangle"><path  d="M0,0l72.5,72.5H0V0z"></path></g><g id="star"><path style="fill: #fff;" d="M33.2,51.9l-3.9-2.6l1.6-4.4l-4.7,0.2L25,40.6l-3.7,2.9l-3.7-2.9l-1.2,4.5l-4.7-0.2l1.6,4.4l-3.9,2.6l3.9,2.6l-1.6,4.4l4.7-0.2l1.2,4.5l3.7-2.9l3.7,2.9l1.2-4.5l4.7,0.2l-1.6-4.4L33.2,51.9z M24.6,55.3c-0.3,0.4-0.8,0.8-1.3,1s-1.1,0.3-1.9,0.3c-0.9,0-1.7-0.1-2.3-0.4s-1.1-0.7-1.5-1.4c-0.4-0.7-0.6-1.6-0.6-2.6c0-1.4,0.4-2.5,1.1-3.3c0.8-0.8,1.8-1.1,3.2-1.1c1.1,0,1.9,0.2,2.6,0.7s1.1,1.1,1.4,2L23,50.9c-0.1-0.3-0.2-0.5-0.3-0.6c-0.1-0.2-0.3-0.4-0.5-0.5s-0.5-0.2-0.7-0.2c-0.6,0-1.1,0.2-1.4,0.7c-0.2,0.4-0.4,0.9-0.4,1.7c0,1,0.1,1.6,0.4,2c0.3,0.4,0.7,0.5,1.2,0.5c0.5,0,0.9-0.1,1.2-0.4s0.4-0.7,0.6-1.2l2.3,0.7C25.2,54.3,25,54.8,24.6,55.3z"></path></g></svg></div>
+      <div id="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 72.5 72.5"
+          enable-background="new 0 0 72.5 72.5"
+          xml:space="preserve"
+        >
+          <g id="triangle"><path d="M0,0l72.5,72.5H0V0z"></path></g>
+          <g id="star">
+            <path
+              style="fill: #fff"
+              d="M33.2,51.9l-3.9-2.6l1.6-4.4l-4.7,0.2L25,40.6l-3.7,2.9l-3.7-2.9l-1.2,4.5l-4.7-0.2l1.6,4.4l-3.9,2.6l3.9,2.6l-1.6,4.4l4.7-0.2l1.2,4.5l3.7-2.9l3.7,2.9l1.2-4.5l4.7,0.2l-1.6-4.4L33.2,51.9z M24.6,55.3c-0.3,0.4-0.8,0.8-1.3,1s-1.1,0.3-1.9,0.3c-0.9,0-1.7-0.1-2.3-0.4s-1.1-0.7-1.5-1.4c-0.4-0.7-0.6-1.6-0.6-2.6c0-1.4,0.4-2.5,1.1-3.3c0.8-0.8,1.8-1.1,3.2-1.1c1.1,0,1.9,0.2,2.6,0.7s1.1,1.1,1.4,2L23,50.9c-0.1-0.3-0.2-0.5-0.3-0.6c-0.1-0.2-0.3-0.4-0.5-0.5s-0.5-0.2-0.7-0.2c-0.6,0-1.1,0.2-1.4,0.7c-0.2,0.4-0.4,0.9-0.4,1.7c0,1,0.1,1.6,0.4,2c0.3,0.4,0.7,0.5,1.2,0.5c0.5,0,0.9-0.1,1.2-0.4s0.4-0.7,0.6-1.2l2.3,0.7C25.2,54.3,25,54.8,24.6,55.3z"
+            ></path>
+          </g>
+        </svg>
+      </div>
     </div>
-    <div class="activity" id="activity" onmouseover="changeImg()" onmouseout="recoveryImg()">
-        <img src="https://storage-asset.msi.com/frontend/imgs/Widget_TIAMAT.png" alt="" class="img-fluid" style="width: 50%;" id="imgActivity">
+    <div
+      class="activity"
+      id="activity"
+      onmouseover="changeImg()"
+      onmouseout="recoveryImg()"
+    >
+      <img
+        src="https://storage-asset.msi.com/frontend/imgs/Widget_TIAMAT.png"
+        alt=""
+        class="img-fluid"
+        style="width: 50%"
+        id="imgActivity"
+      />
     </div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin=" anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="./assets/js/homePage.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/modal.js"></script>
-
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin=" anonymous"
+  ></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/homePage.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modal.js"></script>
 </html>

@@ -21,7 +21,7 @@
 </head>
 
 </head>
-  <body class="bg-light-gray" id="body">
+  <body class="bg-light-gray" id="body" style="background-image: url('https://storage-asset.msi.com/global/picture/image/feature/mb/Z270/story/msi-z270-intro-enthousiast-hero-bg.jpg');">
       <div class="container d-flex flex-column justify-content-between vh-100">
       <div class="row justify-content-center mt-5">
         <div class="col-xl-5 col-lg-6 col-md-10">
@@ -39,10 +39,10 @@
               <form action="/index.html">
                 <div class="row">
                   <div class="form-group col-md-12 mb-4">
-                    <input type="email" class="form-control input-lg" id="email" aria-describedby="emailHelp" placeholder="Username">
+                    <input type="email" class="form-control input-lg" id="emailLogin" aria-describedby="emailHelp" placeholder="Username">
                   </div>
                   <div class="form-group col-md-12 ">
-                    <input type="password" class="form-control input-lg" id="password" placeholder="Password">
+                    <input type="password" class="form-control input-lg" id="passLogin" placeholder="Password">
                   </div>
                   <div class="col-md-12">
                     <div class="d-flex my-2 justify-content-between">
@@ -51,14 +51,14 @@
                           <input type="checkbox" />
                           <div class="control-indicator"></div>
                         </label>
-                
+                        <span id="checkError"></span>
                       </div>
                       <p><a class="text-blue" href="#">Quên mật khẩu?</a></p>
                     </div>
-                    <a href="./listProduct.html" type="button" class="btn btn-lg btn-block mb-4" style="background-color: red;">ĐĂNG NHẬP</a>
+                    <a type="button" class="btn btn-lg btn-block mb-4 text-dark" style="background-color: red;" id="loginD"  onclick="checkLoginAdmin()">ĐĂNG NHẬP</a>
                     <p>
                       Vẫn chưa có tài khoản ?
-                      <a class="text-blue" href="sign-up.html">Sign Up</a>
+                      <a class="text-blue" href="signup.html">Sign Up</a>
                     </p>
                   </div>
                 </div>
@@ -69,4 +69,6 @@
       </div>
     </div>
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/admin/dist/assets/js/loginAdmin.js"></script>
 </html>
