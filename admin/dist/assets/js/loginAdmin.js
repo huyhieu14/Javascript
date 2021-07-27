@@ -9,6 +9,8 @@ userCurrentAdmin ? document.getElementById("nameCurrentAdmin").innerHTML = userC
 userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin").innerHTML = userCurrentAdmin2 : null;
 userCurrentAdmin ? document.getElementById("nameCurrentAdmin2").innerHTML = userCurrentAdmin : null;
 userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin2").innerHTML = userCurrentAdmin2 : null;
+// userCurrentAdmin ? document.getElementById("nameCurrentAdmin3").innerHTML = userCurrentAdmin : null;
+userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin3").innerHTML = userCurrentAdmin2 : null;
 
 function checkLoginAdmin() {
   var cEmailLogin = document.getElementById("emailLogin").value;
