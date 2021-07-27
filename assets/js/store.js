@@ -56,3 +56,14 @@ function card(cards) {
     });
     return html;
 }
+
+var fillProduct = [];
+fetch("http://localhost:3000/product")
+.then(res => res.json())
+.then(data => {
+(fillProduct = [...data]);
+    fillProduct(fillProduct);
+})
+.then (() => {
+    var fill = docutemt.querySelectorAll(".")
+})

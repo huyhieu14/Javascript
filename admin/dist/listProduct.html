@@ -240,7 +240,7 @@
         .then((res) => res.json())
         .then((data) => {
           (listProduct = [...data]);
-           product(listProduct.slice().reverse());
+          product(listProduct.slice().reverse());
         })
         .then(() => {
           var z = document.querySelectorAll(".delete-product-button");
