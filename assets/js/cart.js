@@ -1,37 +1,7 @@
 var carts = JSON.parse(localStorage.getItem("carts") || "[]");
-var tempPayment = [];
-function increaseCount(a, b) {
-  var result = carts.map((cart) => cart);
-  var input = b.previousElementSibling;
-  var id = b.getAttribute('data-id');
-  var index = carts.findIndex(item => item.id === id);
-  var value = parseInt(input.value, 10);
-  value = isNaN(value) ? 0 : value;
-  value++;
-  input.value = value;
-  var total = input.parentElement.parentElement.parentElement.getElementsByClassName('total-price-cart')[0];
-  total.innerText = Number(value * carts[index].price);
-  var cart = {
-    ...carts[index],
-    total: Number(total.innerText),
-    value: input.value,
-  };
-  carts[index] = cart;
-  localStorage.setItem('carts', JSON.stringify(carts));
-}
+// var tempPayment = [];
 
-
-function decreaseCount(a, b) {
-  var input = b.nextElementSibling;
-  var value = parseInt(input.value, 10);
-  if (value > 1) {
-    value = isNaN(value) ? 0 : value;
-    value--;
-    input.value = value;
-  }
-}
-
-carts.map((cart) => {
+carts.map((cart, index) => {
   cartProduct.insertAdjacentHTML(
     "afterbegin",
     `
@@ -60,19 +30,27 @@ carts.map((cart) => {
                   </td>
                   <td>
                     <div class="counter">
-                      <span class="down" onClick="decreaseCount()"
+                      <span class="down" data-id="${
+                        cart.id
+                      }" onClick="decreaseCount(event, this)"
                         >-</span
                       >
-                      <input type="text" class="quantity" value="${cart.value || 1}" />
-                      <span class="up" data-id="${cart.id}" onClick="increaseCount(event, this)"
+                      <input type="text" class="quantity" value="${
+                        cart.value || 1
+                      }" />
+                      <span class="up" data-id="${
+                        cart.id
+                      }" onClick="increaseCount(event, this)"
                         >+</span
                       >
                     </div>
                   </td>
                   <td class="w-100 text-center">
-                    <span class="total-price-cart text-center fs-4">${cart.total || cart.price}</span>
+                    <span class="text-center fs-4">$</span><span class="total-price-cart text-center fs-4">${
+                      cart.total || cart.price
+                    }</span>
                     <span class="float-end">
-                      <button type="button" class="btn button-delete-cart">
+                      <button data-id="${index}" type="button" class="btn button-delete-cart">
                         Xoá
                       </button>
                     </span>
@@ -81,3 +59,96 @@ carts.map((cart) => {
         `
   );
 });
+
+// payment.insertAdjacentHTML(
+//   "afterbegin",
+//   `
+    
+//     `
+// );
+
+var totalS = 0;
+
+function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var id = b.getAttribute("data-id");
+  var index = carts.findIndex((item) => item.id === id);
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+  var total =
+    input.parentElement.parentElement.parentElement.getElementsByClassName(
+      "total-price-cart"
+    )[0];
+  total.innerText = Number(value * carts[index].price);
+  var cart = {
+    ...carts[index],
+    total: Number(total.innerText),
+    value: input.value,
+  };
+  carts[index] = cart;
+  localStorage.setItem("carts", JSON.stringify(carts));
+  tempPayment();
+}
+
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var id = b.getAttribute("data-id");
+  var index = carts.findIndex((item) => item.id === id);
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+  var total =
+    input.parentElement.parentElement.parentElement.getElementsByClassName(
+      "total-price-cart"
+    )[0];
+  total.innerText = Number(value * carts[index].price);
+  var cart = {
+    ...carts[index],
+    total: Number(total.innerText),
+    value: input.value,
+  };
+  carts[index] = cart;
+  localStorage.setItem("carts", JSON.stringify(carts));
+  tempPayment();
+}
+
+(() => {
+  document.querySelectorAll(".button-delete-cart").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.target.parentNode.parentNode.parentNode.remove();
+      var id = e.target.getAttribute("data-id");
+      carts.splice(id, 1);
+      localStorage.setItem("carts", JSON.stringify(carts));
+      window.location.reload();
+    });
+  });
+})();
+
+
+function tempPayment(){
+  let total = 0;
+  let finalTotal = 0;
+  let totalQuantity = 0;
+  carts.forEach((product) => {
+    total += +product.total;
+    totalQuantity += +product.value;
+  })
+  document.getElementById("tempTotal").innerHTML = "$" + total;
+  document.getElementById("totalQuantity").innerHTML = totalQuantity;
+
+  if (total > 2500){
+    finalTotal = total;
+    document.getElementById("shipping").innerHTML = "Miễn Phí"
+  }else{
+    finalTotal = total + 100;
+    document.getElementById("shipping").innerHTML = "$" + 100;
+  }
+  document.getElementById("finalTotal").innerHTML = "$" + finalTotal;
+}
+
+tempPayment();

@@ -1,0 +1,123 @@
+.modal-body {
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns 
+    stack on top of each other instead of next to each other (also change the direction 
+    - make the "cart" column go on top) 
+  */
+}
+
+.modal-body h2 {
+  text-align: left;
+}
+
+.modal-body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal-body .error {
+  color: red;
+  border-color: red;
+}
+
+.modal-body .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.modal-body .col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+}
+
+.modal-body .col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  -webkit-box-flex: 50%;
+          flex: 50%;
+}
+
+.modal-body .col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  -webkit-box-flex: 75%;
+          flex: 75%;
+  padding: 0;
+}
+
+.modal-body .col-25, .modal-body .col-50, .modal-body .col-75 {
+  padding: 0 16px;
+}
+
+.modal-body .container {
+  background-color: #FFFFFF;
+  padding: 3px 18px 13px 18px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+          box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+}
+
+.modal-body input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #821a1a;
+  border-radius: 1px;
+}
+
+.modal-body label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.modal-body .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.modal-body .btn {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+          box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+}
+
+.modal-body .btn:hover {
+  background-color: red;
+}
+
+.modal-body a {
+  color: #2196F3;
+}
+
+.modal-body hr {
+  border: 1px solid lightgrey;
+}
+
+.modal-body span.price {
+  float: right;
+  color: grey;
+}
+
+@media (min-width: 576px) {
+  .modal-body .modal-dialog {
+    width: 1000px;
+  }
+}
+/*# sourceMappingURL=modalcheckout.css.map */

@@ -29,6 +29,8 @@ fetch("http://localhost:3000/product")
   .then((res) => res.json())
   .then((data) => {
     arrProduct = [...data].reverse();
+    // card(arrProduct);
+    
     var perPage = 8;
     var start = (page - 1) * perPage;
     var end = page * perPage;
@@ -76,7 +78,6 @@ fetch("http://localhost:3000/product")
                     </div>`
       );
     });
-
     tempArr.map((item) => {
       pagination.insertAdjacentHTML(
         "beforeend",
@@ -90,7 +91,6 @@ fetch("http://localhost:3000/product")
       );
     });
     addEventButton();
-
     // document.querySelectorAll(".pagination-button").forEach((item) => {
     //   item.addEventListener("click", (e) => {
     //     document.getElementById("product").innerHTML = "";
@@ -209,7 +209,9 @@ const addProduct = (e) => {
   let ram = parent.getElementsByClassName("card-ram")[0].innerText;
   let storage = parent.getElementsByClassName("card-storage")[0].innerText;
   let price = parent.getElementsByClassName("card-price")[0].innerText;
-  let card = { id, image, title, system, core, vga, ram, storage, price };
+  let total = price;
+  let value = 1;
+  let card = { id, image, title, system, core, vga, ram, storage, price, total, value};
   if (carts.some((card) => card.id === id)) {
     console.log("Đã có trong giỏ hàng");
     return;
