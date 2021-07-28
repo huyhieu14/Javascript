@@ -127,5 +127,24 @@
       "price": "1599",
       "id": 11
     }
+  ],
+  "Oder": [
+    {
+      "fullName": "Nguyễn Phan Huy hiếu",
+      "email": "huyhieu.nguyenphan@gmail.com",
+      "address": "113 Trần Phú",
+      "city": "Huế",
+      "state": "TT.Huế",
+      "zip": "12000",
+      "cardName": "NGUYEN PHAN HUY HIEU",
+      "cardNumber": "88882222777733336666",
+      "expmonth": "2",
+      "expyear": "2025",
+      "ccv": "213",
+      "total": "2548",
+      "Products[product]": "[object Object],[object Object]",
+      "sameadr": "on",
+      "id": 3
+    }
   ]
 }

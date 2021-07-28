@@ -1,24 +1,8 @@
-/* ====== Index ======
 
-1. JEKYLL INSTANT SEARCH
-2. SCROLLBAR CONTENT
-3. TOOLTIPS AND POPOVER
-4. JVECTORMAP DASHBOARD
-5. JVECTORMAP ANALYTICS
-6. JVECTORMAP WIDGET
-7. MULTIPLE SELECT
-8. LOADING BUTTON
-  8.1. BIND NORMAL BUTTONS
-  8.2. BIND PROGRESS BUTTONS AND SIMULATE LOADING PROGRESS
-9. TOASTER
-10. PROGRESS BAR
-
-====== End ======*/
 
 $(document).ready(function() {
   "use strict";
 
-  /*======== 1. JEKYLL INSTANT SEARCH ========*/
 
   SimpleJekyllSearch.init({
     searchInput: document.getElementById('search-input'),
@@ -31,18 +15,15 @@ $(document).ready(function() {
   });
 
 
-  /*======== 2. SCROLLBAR CONTENT ========*/
 
   function scrollWithBigMedia(media) {
     var $elDataScrollHeight = $("[data-scroll-height]");
     if (media.matches) {
-      /* The viewport is greater than, or equal to media screen size */
       $elDataScrollHeight.each(function() {
         var scrollHeight = $(this).attr("data-scroll-height");
         $(this).css({ height: scrollHeight + "px", overflow: "hidden" });
       });
 
-      //For content that needs scroll
       $(".slim-scroll")
         .slimScroll({
           opacity: 0,
@@ -57,16 +38,14 @@ $(document).ready(function() {
             .css("opacity", 0.4);
         });
     } else {
-      /* The viewport is less than media screen size */
       $elDataScrollHeight.css({ height: "auto", overflow: "auto" });
     }
   }
 
   var media = window.matchMedia("(min-width: 992px)");
-  scrollWithBigMedia(media); // Call listener function at run time
-  media.addListener(scrollWithBigMedia); // Attach listener function on state changes
+  scrollWithBigMedia(media); 
+  media.addListener(scrollWithBigMedia); 
 
-  /*======== 3. TOOLTIPS AND POPOVER ========*/
   $('[data-toggle="tooltip"]').tooltip({
     container: "body",
     template:
@@ -74,7 +53,7 @@ $(document).ready(function() {
   });
   $('[data-toggle="popover"]').popover();
 
-  /*======== 4. JVECTORMAP DASHBOARD ========*/
+  
   var mapData = {
     US: 1298,
     FR: 540,

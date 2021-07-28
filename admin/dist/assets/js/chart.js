@@ -1,40 +1,5 @@
-/* ====== Index ======
-
-1. DUAL LINE CHART
-2. DUAL LINE CHART2
-3. LINE CHART
-4. LINE CHART1
-5. LINE CHART2
-6. AREA CHART
-7. AREA CHART1
-8. AREA CHART2
-9. AREA CHART3
-10. GRADIENT LINE CHART
-11. DOUGHNUT CHART
-12. POLAR CHART
-13. RADAR CHART
-14. CURRENT USER BAR CHART
-15. ANALYTICS - USER ACQUISITION
-16. ANALYTICS - ACTIVITY CHART
-17. HORIZONTAL BAR CHART1
-18. HORIZONTAL BAR CHART2
-19. DEVICE - DOUGHNUT CHART
-20. BAR CHART
-21. BAR CHART1
-22. BAR CHART2
-23. BAR CHART3
-24. GRADIENT LINE CHART1
-25. GRADIENT LINE CHART2
-26. GRADIENT LINE CHART3
-27. ACQUISITION3
-28. STATISTICS
-
-====== End ======*/
-
 $(document).ready(function() {
   "use strict";
-  
-  /*======== 1. DUAL LINE CHART ========*/
   var dual = document.getElementById("dual-line");
   if (dual !== null) {
     var urChart = new Chart(dual, {
@@ -170,7 +135,7 @@ $(document).ready(function() {
                 display: false
               },
               ticks: {
-                display: false, // hide main x-axis line
+                display: false, 
                 beginAtZero: true
               },
               barPercentage: 1.8,
@@ -180,8 +145,7 @@ $(document).ready(function() {
           yAxes: [
             {
               gridLines: {
-                drawBorder: false, // hide main y-axis line
-                display: false
+                drawBorder: false,
               },
               ticks: {
                 display: false,

@@ -1,5 +1,4 @@
 var carts = JSON.parse(localStorage.getItem("carts") || "[]");
-// var tempPayment = [];
 
 carts.map((cart, index) => {
   cartProduct.insertAdjacentHTML(
@@ -59,11 +58,10 @@ carts.map((cart, index) => {
         `
   );
 });
-
 // payment.insertAdjacentHTML(
 //   "afterbegin",
 //   `
-    
+
 //     `
 // );
 
@@ -129,26 +127,33 @@ function decreaseCount(a, b) {
   });
 })();
 
-
-function tempPayment(){
+function tempPayment() {
   let total = 0;
   let finalTotal = 0;
   let totalQuantity = 0;
   carts.forEach((product) => {
     total += +product.total;
     totalQuantity += +product.value;
-  })
+  });
   document.getElementById("tempTotal").innerHTML = "$" + total;
   document.getElementById("totalQuantity").innerHTML = totalQuantity;
 
-  if (total > 2500){
+  if (total > 2500) {
     finalTotal = total;
-    document.getElementById("shipping").innerHTML = "Miễn Phí"
-  }else{
+    document.getElementById("shipping").innerHTML = "Miễn Phí";
+  } else {
     finalTotal = total + 100;
     document.getElementById("shipping").innerHTML = "$" + 100;
   }
   document.getElementById("finalTotal").innerHTML = "$" + finalTotal;
+  localStorage.setItem("finalPayment", finalTotal)
 }
 
 tempPayment();
+var total = localStorage.getItem("finalPayment");
+document.getElementById("total").setAttribute('value', total);
+document.getElementById("Products").setAttribute('value', carts);
+function reloadCart(){
+  localStorage.setItem("carts", []);
+}
+
