@@ -10,7 +10,11 @@ function checkLogin() {
   );
   if (cEmailLogin != "" || cPassLogin != "" || cEmailLogin.match(emailFormat)) {
     listAccount.forEach((user) => {
-      if (user.email == cEmailLogin && user.password == cPassLogin && user.role == 0) {
+      if (
+        user.email == cEmailLogin &&
+        user.password == cPassLogin &&
+        user.role == 0
+      ) {
         Swal.fire("Good job!", "You clicked the button!", "success");
         localStorage.setItem("userCurrent", user.userName);
         localStorage.setItem("userCurrent2", user.email);
@@ -49,18 +53,22 @@ function checkRegister() {
         userName: cNameRegister,
         email: cEmailRegister,
         password: cPassRegister,
-        role: 0
+        role: 0,
+        phone: "",
+        firstname: "",
+        lastname: "",
       };
       listAccount.push(user);
       localStorage.setItem("user", JSON.stringify(listAccount));
       Swal.fire("ĐĂNG KÝ THÀNH CÔNG!", "Click ok để xác nhận!", "Ok");
-      console.log(listAccount);
     }
   } else {
     document.getElementById("checkError2").innerHTML =
       "Vui lòng nhập đúng định dạng!";
   }
 }
+
+function updateUserAcount() {}
 
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");

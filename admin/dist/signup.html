@@ -6,9 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <title></title>
-
-      <!-- GOOGLE FONTS -->
+      <title>MSI ADMIN</title>
       <link
         href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
         rel="stylesheet"
@@ -39,11 +37,12 @@
         rel="stylesheet"
       />
       <link id="sleek-css" rel="stylesheet" href="assets/css/sleek.css" />
-      <link href="assets/img/favicon.png" rel="shortcut icon" />
+      <link href="../../assets/favicon/favicon-16x16.png" rel="shortcut icon" />
       <script src="assets/plugins/nprogress/nprogress.js"></script>
+      <link rel="stylesheet" href="../../assets/css/header.css">
     </head>
   </head>
-  <body class="bg-light-gray" id="body">
+  <body class="bg-light-gray" id="body" style="background-image: url('https://storage-asset.msi.com/global/picture/image/feature/mb/Z270/story/msi-z270-intro-enthousiast-hero-bg.jpg');">
     <div class="container d-flex flex-column justify-content-between vh-100">
       <div class="row justify-content-center mt-5">
         <div class="col-xl-5 col-lg-6 col-md-10">
@@ -61,7 +60,7 @@
               </div>
             </div>
             <div class="card-body p-5">
-              <h4 class="text-dark mb-5">ĐĂNG KÝ</h4>
+              <h4 class="text-dark mb-5">THÊM TÀI KHOẢN ADMIN</h4>
               <form action="/index.html">
                 <div class="row">
                   <div class="form-group col-md-12 mb-4">
@@ -100,11 +99,6 @@
                   </div>
                   <div class="col-md-12">
                     <div class="d-inline-block mr-3">
-                      <label class="control control-checkbox">
-                        <input type="checkbox" />
-                        <div class="control-indicator"></div>
-                        I Agree the terms and conditions
-                      </label>
                       <span id="checkError2"></span>
                     </div>
                     <button
@@ -113,12 +107,8 @@
                       onclick="checkRegister()"
                       style="background-color: red;"
                     >
-                      Sign Up
+                      THÊM
                     </button>
-                    <p>
-                      Already have an account?
-                      <a class="text-blue" href="signin.html">Sign in</a>
-                    </p>
                   </div>
                 </div>
               </form>
@@ -128,6 +118,7 @@
       </div>
     </div>
   </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="sweetalert2.all.min.js"></script>
   <script src="assets/js/loginAdmin.js"></script>
 

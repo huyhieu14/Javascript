@@ -1,16 +1,30 @@
-
-var listAccountAdmin = localStorage.getItem("userAdmin")
-  ? JSON.parse(localStorage.getItem("userAdmin"))
+var listAccountAdmin = localStorage.getItem("user")
+  ? JSON.parse(localStorage.getItem("user"))
   : [];
-var userCurrentAdmin = localStorage.getItem("userCurrentAdmin") ? (localStorage.getItem("userCurrentAdmin")) : "";
-var userCurrentAdmin2 = localStorage.getItem("userCurrentAdmin2") ? (localStorage.getItem("userCurrentAdmin2")) : "";
+var userCurrentAdmin = localStorage.getItem("userCurrentAdmin")
+  ? localStorage.getItem("userCurrentAdmin")
+  : "";
+var userCurrentAdmin2 = localStorage.getItem("userCurrentAdmin2")
+  ? localStorage.getItem("userCurrentAdmin2")
+  : "";
 
-userCurrentAdmin ? document.getElementById("nameCurrentAdmin").innerHTML = userCurrentAdmin : null;
-userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin").innerHTML = userCurrentAdmin2 : null;
-userCurrentAdmin ? document.getElementById("nameCurrentAdmin2").innerHTML = userCurrentAdmin : null;
-userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin2").innerHTML = userCurrentAdmin2 : null;
-// userCurrentAdmin ? document.getElementById("nameCurrentAdmin3").innerHTML = userCurrentAdmin : null;
-userCurrentAdmin2 ? document.getElementById("emailCurrentAdmin3").innerHTML = userCurrentAdmin2 : null;
+userCurrentAdmin
+  ? (document.getElementById("nameCurrentAdmin").innerHTML = userCurrentAdmin)
+  : null;
+userCurrentAdmin2
+  ? (document.getElementById("emailCurrentAdmin").innerHTML = userCurrentAdmin2)
+  : null;
+userCurrentAdmin
+  ? (document.getElementById("nameCurrentAdmin2").innerHTML = userCurrentAdmin)
+  : null;
+userCurrentAdmin2
+  ? (document.getElementById("emailCurrentAdmin2").innerHTML =
+      userCurrentAdmin2)
+  : null;
+userCurrentAdmin2
+  ? (document.getElementById("emailCurrentAdmin3").innerHTML =
+      userCurrentAdmin2)
+  : null;
 
 function checkLoginAdmin() {
   var cEmailLogin = document.getElementById("emailLogin").value;
@@ -19,15 +33,15 @@ function checkLoginAdmin() {
     String(cEmailLogin).toLowerCase()
   );
   if (cEmailLogin != "" || cPassLogin != "" || cEmailLogin.match(emailFormat)) {
-    listAccountAdmin.forEach((userAdmin) => {
+    listAccountAdmin.forEach((user) => {
       if (
-        userAdmin.email == cEmailLogin &&
-        userAdmin.password == cPassLogin &&
-        userAdmin.role == 1
+        user.email == cEmailLogin &&
+        user.password == cPassLogin &&
+        user.role == 1
       ) {
-        Swal.fire("Good job!", "You clicked the button!", "success");
-        localStorage.setItem("userCurrentAdmin", userAdmin.userName);
-        localStorage.setItem("userCurrentAdmin2", userAdmin.email);
+        Swal.fire("Đăng nhập thành công!", "Click để trở về admin!", "Ok");
+        localStorage.setItem("userCurrentAdmin", user.userName);
+        localStorage.setItem("userCurrentAdmin2", user.email);
         loginD.setAttribute("href", "/admin/dist/index.html");
         return;
       }
@@ -56,25 +70,31 @@ function checkRegister() {
     cPassRegisterC != "" ||
     cEmailRegister.match(emailFormat)
   ) {
-    if (listAccountAdmin.some((userAdmin) => userAdmin.email === cEmailRegister)) {
+    if (listAccountAdmin.some((user) => user.email === cEmailRegister)) {
       document.getElementById("checkError2").innerHTML =
         "Tài khoản đã tồn tại!";
       return;
     } else {
-      if (cPassRegister != cPassRegisterC){
+      if (cPassRegister != cPassRegisterC) {
         document.getElementById("checkError2").innerHTML =
-      "Xác nhận mật khẩu không đúng!";
-      }else {
-        var userAdmin = {
+          "Xác nhận mật khẩu không đúng!";
+      } else {
+        var user = {
           userName: cNameRegister,
           email: cEmailRegister,
           password: cPassRegister,
-          role: 1
+          role: 1,
+          phone: "",
+          firstname: "",
+          lastname: "",
+          date: "",
+          month: "",
+          year: "",
+          
         };
-        listAccountAdmin.push(userAdmin);
-        localStorage.setItem("userAdmin", JSON.stringify(listAccountAdmin));
-        Swal.fire("ĐĂNG KÝ THÀNH CÔNG!", "Click ok để xác nhận!", "Ok");
-        console.log(listAccountAdmin);
+        listAccountAdmin.push(user);
+        localStorage.setItem("user", JSON.stringify(listAccountAdmin));
+        Swal.fire("THÊM THÀNH CÔNG!", "Click ok để xác nhận!", "Ok");
       }
     }
   } else {
@@ -83,8 +103,7 @@ function checkRegister() {
   }
 }
 
-
 function logout() {
-  localStorage.setItem("userCurrentAdmin", "")
-  localStorage.setItem("userCurrentAdmin2", "")
+  localStorage.setItem("userCurrentAdmin", "");
+  localStorage.setItem("userCurrentAdmin2", "");
 }

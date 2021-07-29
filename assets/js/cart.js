@@ -59,12 +59,6 @@ carts.map((cart, index) => {
         `
   );
 });
-// payment.insertAdjacentHTML(
-//   "afterbegin",
-//   `
-
-//     `
-// );
 
 var totalS = 0;
 
