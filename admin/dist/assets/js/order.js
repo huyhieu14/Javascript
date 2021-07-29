@@ -6,6 +6,7 @@ fetch("http://localhost:3000/Oder")
 .then((data) => {
   informations = [...data];
   info(informations);
+  console.log(informations);
 })
 .then(() => {
   var z = document.querySelectorAll("#btnCancel");
@@ -79,7 +80,7 @@ var html = list.map((infoCustomer) => {
                               <li><b>CCV:</b>${infoCustomer.ccv}</li>
                             </ul>
                             <ul id="listProductModal">
-                                
+                               
                             </ul>
                           </div>
                           <div class="modal-footer">
@@ -117,3 +118,15 @@ var html = list.map((infoCustomer) => {
   );
 });
 }   
+
+function products(list){
+  list.map((item) => {
+    listProductModal.insertAdjacentHTML(
+      "afterbegin",
+      `
+      <li>${item.title}</li>
+      `
+    )
+  })
+}
+
