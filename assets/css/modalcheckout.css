@@ -5,8 +5,8 @@
 }
 
 .modal-body {
-  height: 800px;
-  overflow: auto;
+  overflow-y: scroll;
+  height: 500px;
 }
 
 .modal-body h2 {
