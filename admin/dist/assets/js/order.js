@@ -23,10 +23,11 @@ fetch("http://localhost:3000/Oder")
     });
   });
 });
+
 function info(list) {
 var html = list.map((infoCustomer, index) => {
   orderListing.insertAdjacentHTML(
-    "afterbegin",
+    "beforeend",
     `
         <tr class="text-center">
                   <td>DH${infoCustomer.id}</td>
@@ -102,7 +103,7 @@ var html = list.map((infoCustomer, index) => {
                     <input
                       type="button"
                       class="btn btn-disable status text-white p-2"
-                      style="background-color: red" value="Chờ Xác Nhận""
+                      style="background-color: red" value="Chờ Xác Nhận" data-id="${index}"
                       ></span
                     >
                   </td>
@@ -138,7 +139,7 @@ buttonConfirm = () => {
 document.querySelectorAll(".confirm").forEach((status) => {
   status.addEventListener("click", (e) => {
     var id = e.target.getAttribute("data-id");
-    var z = document.getElementsByClassName("status")[id -1];
+    var z = document.getElementsByClassName("status")[id];
     z.style.backgroundColor  = "green";
     z.setAttribute("value", "Đã Xác Nhận")
   })
@@ -149,7 +150,7 @@ buttonUnConfirm = () => {
   document.querySelectorAll(".unConfirm").forEach((status) => {
     status.addEventListener("click", (e) => {
       var id = e.target.getAttribute("data-id");
-      var z = document.getElementsByClassName("status")[id -1];
+      var z = document.getElementsByClassName("status")[id];
       z.style.backgroundColor  = "red";
       z.setAttribute("value", "Chờ Xác Nhận")
     })
