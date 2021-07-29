@@ -636,7 +636,7 @@
 /* Sidebar Bg Dark */
 .sidebar-dark {
   .left-sidebar {
-    background-color: $navy;
+    background-color: #1d2531;
   }
   .sidebar {
     .sub-menu {
@@ -660,7 +660,7 @@
     border-color: rgba($border-color, .2);
   }
   .sidebar-footer {
-    background-color: #212a39;
+    background-color: #1d2531;
   }
 
 }
@@ -668,12 +668,12 @@
 /* Sidebar Light */
 .sidebar-light {
   .left-sidebar {
-    background-color: $white;
+    background-color: #1d2531;
   }
   .sidebar {
     border-right: 1px solid $border-color;
     .sub-menu {
-      background-color: $white;
+      background-color: #1d2531;
       > li > a {
         color: $secondary;
       }

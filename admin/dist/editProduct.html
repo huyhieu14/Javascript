@@ -49,24 +49,20 @@
       NProgress.start();
     </script>
     <div class="mobile-sticky-body-overlay"></div>
-
     <div class="wrapper">
       <aside class="left-sidebar bg-sidebar">
         <div id="sidebar" class="sidebar sidebar-with-footer">
-          <!-- Aplication Brand -->
           <div class="app-brand" style="background-color: red">
-            <a href="/index.html">
+            <a href="/index.html" class="p-0">
               <img
-                src="https://upload.wikimedia.org/wikipedia/vi/archive/6/6c/20201107090148%21Msi_logo.png"
+                src="https://storage-asset.msi.com/event/2021/tw/gaming-offical-home/images/msilogo.png"
                 alt=""
-                class="img-fluid"
+                class="img-fluid float-start"
               />
               <span class="brand-name">ADMIN</span>
             </a>
           </div>
-          <!-- begin sidebar scrollbar -->
           <div class="sidebar-scrollbar">
-            <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
               <li class="has-sub active expand">
                 <a
@@ -77,7 +73,7 @@
                   aria-expanded="false"
                   aria-controls="dashboard"
                 >
-                  <i class="mdi mdi-view-dashboard-outline"></i>
+                  <i class="mdi mdi-view-dashboard-outline" style="color: red;"></i>
                   <span class="nav-text">TỔNG QUAN</span> <b class="caret"></b>
                 </a>
                 <ul
@@ -88,74 +84,71 @@
                   <div class="sub-menu">
                     <li class="active">
                       <a class="sidenav-item-link" href="index.html">
-                        <span class="nav-text">Thống Kê</span>
+                        <span class="nav-text"><i class="fal fa-chart-pie"></i> Thống Kê</span>
                       </a>
                     </li>
                     <li>
                       <a class="sidenav-item-link" href="./order.html">
-                        <span class="nav-text">Đặt Hàng</span>
+                        <span class="nav-text"><i class="fal fa-luggage-cart"></i> Đặt Hàng</span>
                       </a>
                     </li>
                     <li>
                       <a class="sidenav-item-link" href="./user-profile.html">
-                        <span class="nav-text">Sửa thông tin tài khoản</span>
+                        <span class="nav-text"><i class="fal fa-user"></i> Sửa thông tin tài khoản</span>
                       </a>
                     </li>
                   </div>
                 </ul>
               </li>
             </ul>
-          </div>
-          <hr class="separator" />
-          <div class="sidebar-scrollbar">
-            <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
-              <li class="has-sub active expand">
-                <a
-                  class="sidenav-item-link"
-                  href="javascript:void(0)"
-                  data-toggle="collapse"
-                  data-target="#dashboard1"
-                  aria-expanded="false"
-                  aria-controls="dashboard1"
-                >
-                  <i class="fab fa-product-hunt"></i>
-                  <span class="nav-text">SẢN PHẨM</span> <b class="caret"></b>
-                </a>
-                <ul
-                  class="collapse show"
-                  id="dashboard1"
-                  data-parent="#sidebar-menu1"
-                >
-                  <div class="sub-menu">
-                    <li class="active">
-                      <a class="sidenav-item-link" href="./product.html">
-                        <span class="nav-text">Thêm Sản Phẩm</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="sidenav-item-link" href="./listProduct.html">
-                        <span class="nav-text">Danh Sách Sản Phẩm</span>
-                      </a>
-                    </li>
-                  </div>
-                </ul>
-              </li>
-            </ul>
+                <li class="has-sub active expand">
+                  <a
+                    class="sidenav-item-link"
+                    href="javascript:void(0)"
+                    data-toggle="collapse"
+                    data-target="#dashboard1"
+                    aria-expanded="false"
+                    aria-controls="dashboard1"
+                  >
+                  <i class="fab fa-product-hunt" style="color: red;"></i>
+                    <span class="nav-text">SẢN PHẨM</span> <b class="caret"></b>
+                  </a>
+                  <ul
+                    class="collapse show"
+                    id="dashboard1"
+                    data-parent="#sidebar-menu1"
+                  >
+                    <div class="sub-menu">
+                      <li class="active">
+                        <a class="sidenav-item-link" href="./product.html">
+                          <span class="nav-text"><i class="fal fa-plus-square"></i> Thêm Sản Phẩm</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidenav-item-link" href="./listProduct.html">
+                          <span class="nav-text"><i class="fas fa-th-list"></i> Danh Sách Sản Phẩm</span>
+                        </a>
+                      </li>
+                      <li>
+                          <a class="sidenav-item-link" href="./listAcount.html">
+                            <span class="nav-text"><i class="far fa-file-user"></i> Danh Sách Tài Khoản</span>
+                          </a>
+                        </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
           </div>
-          <hr class="separator" />
+          <hr class="separator"/>
         </div>
       </aside>
-
       <div class="page-wrapper">
-        <!-- Header -->
         <header class="main-header" id="header">
           <nav class="navbar navbar-static-top navbar-expand-lg">
-            <!-- Sidebar toggle button -->
             <button id="sidebar-toggler" class="sidebar-toggle">
               <span class="sr-only">Toggle navigation</span>
             </button>
-            <!-- search form -->
             <div class="search-form d-none d-lg-inline-block">
               <div class="input-group">
                 <button
@@ -171,7 +164,7 @@
                   name="query"
                   id="search-input"
                   class="form-control"
-                  placeholder="Sản Phẩm"
+                  placeholder="'Thống kê', 'Tài khoản' etc."
                   autofocus
                   autocomplete="off"
                 />
@@ -182,52 +175,37 @@
             </div>
 
             <div class="navbar-right">
-              <ul class="nav navbar-nav">
-                <!-- User Account -->
-                <li class="dropdown user-menu">
-                  <button
-                    href="#"
-                    class="dropdown-toggle nav-link"
-                    data-toggle="dropdown"
-                  >
-                    <img
-                      src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png"
-                      class="user-image"
-                      alt="User Image"
-                    />
-                    <span
-                      class="d-none d-lg-inline-block"
-                      id="nameCurrentAdmin"
-                    ></span>
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-right"
-                    style="width: 285px"
-                  >
-                    <!-- User image -->
-                    <li class="dropdown-header">
-                      <img
-                        src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png"
-                        class="img-circle"
-                        alt="User Image"
-                      />
-                      <div class="d-inline-block">
-                        <small class="pt-1" id="emailCurrentAdmin"></small>
-                      </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user-menu">
+                        <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            <img
+              src="https://e7.pngegg.com/pngimages/690/524/png-clipart-laptop-msi-logo-video-game-laptop-electronics-computer-thumbnail.png"
+              class="user-image"
+              alt="User Image"
+            />
+            <span class="d-none d-lg-inline-block" id="nameCurrentAdmin"></span>
+          </button>
+                        <ul class="dropdown-menu dropdown-menu-right" style="width: 285px;">
+                            <!-- User image -->
+                            <li class="dropdown-header">
+                                <img src="https://e7.pngegg.com/pngimages/690/524/png-clipart-laptop-msi-logo-video-game-laptop-electronics-computer-thumbnail.png" class="img-circle" alt="User Image" />
+                                <div class="d-inline-block">
+                                    <small class="pt-1" id="emailCurrentAdmin"></small>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="user-profile.html">
+                                    <i class="mdi mdi-account"></i> My Profile
+                                </a>
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="signin.html" onclick="logout()">
+                                    <i class="mdi mdi-logout"></i> Log Out
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                      <a href="user-profile.html">
-                        <i class="mdi mdi-account"></i> My Profile
-                      </a>
-                    </li>
-                    <li class="dropdown-footer">
-                      <a href="signin.html" onclick="logout()">
-                        <i class="mdi mdi-logout"></i> Log Out
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                </ul>
             </div>
           </nav>
         </header>
