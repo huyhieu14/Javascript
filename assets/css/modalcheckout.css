@@ -1,3 +1,14 @@
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1000px;
+  }
+}
+
+.modal-body {
+  height: 800px;
+  overflow: auto;
+}
+
 .modal-body h2 {
   text-align: left;
 }
@@ -23,7 +34,7 @@
   margin: 0 -10px;
 }
 
-.modal-body input[type=text] {
+.modal-body input[type="text"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -61,7 +72,7 @@
 }
 
 .modal-body a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .modal-body hr {

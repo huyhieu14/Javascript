@@ -1,18 +1,26 @@
-
-.modal-body{
-  h2{
-    text-align:left;
+.modal-dialog {
+  @media (min-width: 576px) {
+    max-width: 1000px;
   }
-  
+}
+
+.modal-body {
+  height: 800px;
+  overflow: auto;
+
+  h2 {
+    text-align: left;
+  }
+
   * {
     box-sizing: border-box;
   }
-  
+
   .error {
     color: red;
     border-color: red;
   }
-  
+
   .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -20,27 +28,26 @@
     flex-wrap: wrap;
     margin: 0 -10px;
   }
-  
-  
-  input[type=text] {
+
+  input[type="text"] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid rgb(130, 26, 26);
     border-radius: 1px;
   }
-  
+
   label {
     margin-bottom: 10px;
     display: block;
   }
-  
+
   .icon-container {
     margin-bottom: 20px;
     padding: 7px 0;
     font-size: 24px;
   }
-  
+
   .btn {
     background-color: black;
     color: white;
@@ -52,24 +59,22 @@
     cursor: pointer;
     font-size: 17px;
     box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
-  
   }
-  
+
   .btn:hover {
     background-color: red;
   }
-  
+
   a {
-    color: #2196F3;
+    color: #2196f3;
   }
-  
+
   hr {
     border: 1px solid lightgrey;
   }
-  
+
   span.price {
     float: right;
     color: grey;
   }
 }
-    
