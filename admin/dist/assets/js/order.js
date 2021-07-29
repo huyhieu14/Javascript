@@ -6,7 +6,8 @@ fetch("http://localhost:3000/Oder")
 .then((data) => {
   informations = [...data];
   info(informations);
-  console.log(informations);
+  buttonConfirm();
+  buttonUnConfirm();
 })
 .then(() => {
   var z = document.querySelectorAll("#btnCancel");
@@ -23,7 +24,7 @@ fetch("http://localhost:3000/Oder")
   });
 });
 function info(list) {
-var html = list.map((infoCustomer) => {
+var html = list.map((infoCustomer, index) => {
   orderListing.insertAdjacentHTML(
     "afterbegin",
     `
@@ -98,16 +99,19 @@ var html = list.map((infoCustomer) => {
                   </td>
                   <td><span>$</span><span id="total">${infoCustomer.total}</span></td>
                   <td>
-                    <span
-                      type="text"
-                      class="status text-white p-2"
-                      style="background-color: red"
-                      >Chờ Xác Nhận</span
+                    <input
+                      type="button"
+                      class="btn btn-disable status text-white p-2"
+                      style="background-color: red" value="Chờ Xác Nhận""
+                      ></span
                     >
                   </td>
                   <td class="d-flex justify-content-around">
-                    <button type="button" class="btn btn-success">
+                    <button type="button" class="btn confirm btn-success" data-id="${index}">
                       Xác nhận
+                    </button>
+                    <button type="button" class="btn unConfirm btn-success" data-id="${index}">
+                      Chờ
                     </button>
                     <button type="button" class="btn btn-danger" data-id="${infoCustomer.id}" id="btnCancel">
                       Huỷ
@@ -129,4 +133,29 @@ function products(list){
     )
   })
 }
+
+buttonConfirm = () => {
+document.querySelectorAll(".confirm").forEach((status) => {
+  status.addEventListener("click", (e) => {
+    var id = e.target.getAttribute("data-id");
+    var z = document.getElementsByClassName("status")[id -1];
+    z.style.backgroundColor  = "green";
+    z.setAttribute("value", "Đã Xác Nhận")
+  })
+})
+};
+
+buttonUnConfirm = () => {
+  document.querySelectorAll(".unConfirm").forEach((status) => {
+    status.addEventListener("click", (e) => {
+      var id = e.target.getAttribute("data-id");
+      var z = document.getElementsByClassName("status")[id -1];
+      z.style.backgroundColor  = "red";
+      z.setAttribute("value", "Chờ Xác Nhận")
+    })
+  })
+  };
+  
+
+
 

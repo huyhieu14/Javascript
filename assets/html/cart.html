@@ -216,7 +216,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
+      <div class="m-auto" role="document" style="width:1000px">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Thanh toán</h5>
@@ -229,14 +229,11 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-75">
-                <div class="container">
+          <div class="modal-body">       
                   <iframe name="submitForm" id="submitForm" style="display: none;"></iframe>
                   <form id="validate" action="http://localhost:3000/Oder" method="POST" target="submitForm">
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-6">
                         <h3>Địa chỉ thanh toán
                         </h3>
                         <label for="fname"
@@ -292,18 +289,18 @@
                             />
                           </div>
                           <div class="col-50">
-                            <label for="zip">Zip</label>
+                            <label for="zip">Số điện thoại</label>
                             <input
                               type="text"
                               id="zip"
                               name="zip"
-                              placeholder="12000"
+                              placeholder="+84"
                               required
                             />
                           </div>
                         </div>
                       </div>
-                      <div class="col-12">
+                      <div class="col-6">
                         <h3>Thanh toán</h3>
                         <label for="fname">Hình thức thanh toán hỗ trợ</label>
                         <div class="icon-container">
@@ -338,7 +335,7 @@
                           required
                         />
                         <div class="row">
-                          <div class="col-50">
+                          <div class="col-6">
                             <label for="expyear">Năm hết hạn</label>
                             <input
                               type="text"
@@ -348,7 +345,7 @@
                               required
                             />
                           </div>
-                          <div class="col-50">
+                          <div class="col-6">
                             <label for="cvv">CVV</label>
                             <input
                               type="text"
@@ -358,7 +355,7 @@
                               required
                             />
                           </div>
-                          <div class="col-50 d-none">
+                          <div class="col-6 d-none">
                             <label for="cvv">Total</label>
                             <input
                               type="text"
@@ -369,7 +366,7 @@
                               required
                             />
                           </div>
-                          <div class="col-50 d-none">
+                          <div class="col-6 d-none">
                             <label for="cvv">Products</label>
                             <input
                               type="text"
@@ -380,24 +377,19 @@
                               required
                             />
                           </div>
+                          <div class="col-12">
+                            <button
+                            type="submit"
+                            value="THANH TOÁN"
+                            class="btn mt-4"
+                            id="btn-check"
+                            onClick="reloadCard()"
+                          >THANH TOÁN</button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <label>
-                      <input type="checkbox" checked="checked" name="sameadr" />
-                      Shipping address same as billing
-                    </label>
-                    <button
-                      type="submit"
-                      value="THANH TOÁN"
-                      class="btn"
-                      id="btn-check"
-                      onClick="reloadCard()"
-                    >THANH TOÁN</button>
-                  </form>
-                </div>
-              </div>
-            </div>
+                  </form>        
           </div>
           <div class="modal-footer">
             <button

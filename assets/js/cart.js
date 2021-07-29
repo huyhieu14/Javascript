@@ -1,5 +1,6 @@
 var carts = JSON.parse(localStorage.getItem("carts") || "[]");
 
+
 carts.map((cart, index) => {
   cartProduct.insertAdjacentHTML(
     "afterbegin",

@@ -1,10 +1,3 @@
-.modal-body {
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns 
-    stack on top of each other instead of next to each other (also change the direction 
-    - make the "cart" column go on top) 
-  */
-}
-
 .modal-body h2 {
   text-align: left;
 }
@@ -28,41 +21,6 @@
   /* IE10 */
   flex-wrap: wrap;
   margin: 0 -10px;
-}
-
-.modal-body .col-25 {
-  -ms-flex: 25%;
-  /* IE10 */
-  -webkit-box-flex: 25%;
-          flex: 25%;
-}
-
-.modal-body .col-50 {
-  -ms-flex: 50%;
-  /* IE10 */
-  -webkit-box-flex: 50%;
-          flex: 50%;
-}
-
-.modal-body .col-75 {
-  -ms-flex: 75%;
-  /* IE10 */
-  -webkit-box-flex: 75%;
-          flex: 75%;
-  padding: 0;
-}
-
-.modal-body .col-25, .modal-body .col-50, .modal-body .col-75 {
-  padding: 0 16px;
-}
-
-.modal-body .container {
-  background-color: #FFFFFF;
-  padding: 3px 18px 13px 18px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
-          box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
 }
 
 .modal-body input[type=text] {
@@ -113,11 +71,5 @@
 .modal-body span.price {
   float: right;
   color: grey;
-}
-
-@media (min-width: 576px) {
-  .modal-body .modal-dialog {
-    width: 1000px;
-  }
 }
 /*# sourceMappingURL=modalcheckout.css.map */
