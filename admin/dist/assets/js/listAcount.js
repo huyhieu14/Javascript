@@ -10,8 +10,8 @@ users.map((users, index) => {
         <tr>
             <td>${index}</td>
             <td>${users.userName}</td>
-            <td>${users.email}</td>
-            <td>+84</td>
+            <td class="d-none d-xl-table-cell">${users.email}</td>
+            <td class="d-none d-xl-table-cell">${users.phone}</td>
             <td><input type="button" class="btn btn-checkRole text-white" value="ADMIN"></td>
             <td><input type="button" class="btn btn-danger text-dark btn-delete" data-id=${index} value="XOÁ"> <input type="button" class="btn btn-warning btn-reset" data-id=${index} value="RESET" title="RESET MẬT KHẨU 1->8"></td>
         </tr>
@@ -59,7 +59,5 @@ function resetPass(){
     })
 }
 resetPass();
-
-
 
 
