@@ -57,6 +57,9 @@ function checkRegister() {
         phone: "",
         firstname: "",
         lastname: "",
+        date: "",
+        month: "",
+        year: "",
       };
       listAccount.push(user);
       localStorage.setItem("user", JSON.stringify(listAccount));
