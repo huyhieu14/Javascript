@@ -130,22 +130,6 @@
   ],
   "Oder": [
     {
-      "fullName": "Nguyễn Trương Anh Kiệt",
-      "email": "clonekietver1001@gmail.com",
-      "address": "batrieu",
-      "city": "huế",
-      "state": "huế",
-      "zip": "0987564536",
-      "cardName": "Nguyễn Trương Anh Kiệt",
-      "cardNumber": "1111222233334444",
-      "expmonth": "9",
-      "expyear": "2021",
-      "ccv": "121",
-      "total": "4047",
-      "Products[product]": "[object Object],[object Object],[object Object]",
-      "id": 1
-    },
-    {
       "fullName": "Nguyễn Phan Huy hiếu",
       "email": "huyhieu.nguyenphan@gmail.com",
       "address": "113 Trần Phú",
@@ -160,6 +144,22 @@
       "total": "1699",
       "Products[product]": "[object Object]",
       "id": 2
+    },
+    {
+      "fullName": "Nguyễn Văn Hoàng",
+      "email": "nguyenvanhoang@gmail.com",
+      "address": "Chi Lăng",
+      "city": "Huế",
+      "state": "Thừa Thiên Huế",
+      "zip": "0911319475",
+      "cardName": "NGUYEN VAN HOANG",
+      "cardNumber": "9128357301283847",
+      "expmonth": "9",
+      "expyear": "2025",
+      "ccv": "324",
+      "total": "1199",
+      "Products[product]": "[object Object]",
+      "id": 3
     }
   ]
 }
