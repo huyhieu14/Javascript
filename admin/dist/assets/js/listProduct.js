@@ -37,7 +37,7 @@ var listProduct = [];
                         <td class="d-none d-md-table-cell"></td>
                         <td >
                             <a href=${`./editProduct.html?id=${product.id}`} type="button" class="btn btn-danger">SỬA</a>
-                            <button class="mt-3 btn btn-danger delete-product-button" data-id="${
+                            <button class=" btn btn-danger delete-product-button" data-id="${
                               product.id
                             }">XOÁ</button>
                         </td>
