@@ -53,84 +53,11 @@ users.map((user, index) => {
                 `
     );
   }
-  if (user.email == checkUser) {
-    let curPass = user.password;
-    document.querySelectorAll(".btn-update").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        let fname = document.getElementById("validationServer01").value;
-        let lname = document.getElementById("validationServer02").value;
-        let phone = document.getElementById("validationServer03").value;
-        let date = document.getElementById("validationServer04").value;
-        let month = document.getElementById("validationServer05").value;
-        let year = document.getElementById("validationServer06").value;
-        let currentPass = document.getElementById("validationServer07").value;
-        let newPass = document.getElementById("validationServer08").value;
-        let cNewPass = document.getElementById("validationServer09").value;
-        console.log(fname);
-        console.log(lname);
-        console.log(phone);
-        console.log(date);
-        console.log(index);
-        console.log(curPass);
-        console.log(phone.length);
-        console.log(year.length);
-        console.log(currentPass);
-        console.log(date);
-        console.log(month);
-        console.log(year);
-        if (
-          fname != "" &&
-          lname != "" &&
-          phone != "" &&
-          date != "" &&
-          month != "" &&
-          year != "" &&
-          currentPass != "" &&
-          newPass != "" &&
-          cNewPass != ""
-        ) {
-          if (
-            phone.length <= 10 &&
-            currentPass == curPass &&
-            newPass == cNewPass &&
-            date < 31 &&
-            date > 1 &&
-            month < 12 &&
-            month > 1 &&
-            year.length <= 4
-          ) {
-            if (newPass.length > 8) {
-              var user = {
-                ...users[index],
-                password: newPass,
-                phone: phone,
-                firstname: fname,
-                lastname: lname,
-                date: date,
-                month: month,
-                year: year,
-              };
-              users[index] = user;
-              localStorage.setItem("user", JSON.stringify(users));
-              Swal.fire("Cập nhật thành công!", "Click để xác nhận!", "Ok");
-            } else {
-              document.getElementById("checkC").innerHTML =
-                "Độ dài mật khẩu phải trên 8 ký tự!";
-            }
-          } else {
-            document.getElementById("checkU").innerHTML =
-              "Nhập sai thông tin hoặc mật khẩu không đúng!";
-          }
-        } else {
-          document.getElementById("checkU").innerHTML =
-            "Vui lòng nhập đầy đủ thông tin!";
-        }
-      });
-    });
-  }
+  
 });
 
-users.map((user) => {
+
+users.map((user, index) => {
   if (user.email == checkUser) {
     updateProfile.insertAdjacentHTML(
       "afterbegin",
@@ -176,6 +103,7 @@ users.map((user) => {
                                     placeholder="Username"
                                     aria-describedby="inputGroupPrepend3"
                                     disabled
+                                    value="${user.userName}"
                                   />
                                 </div>
                               </div>
@@ -269,5 +197,80 @@ users.map((user) => {
                             </form>
       `
     );
+  }
+  if (user.email == checkUser) {
+    let curPass = user.password;
+    document.querySelectorAll(".btn-update").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        let fname = document.getElementById("validationServer01").value;
+        let lname = document.getElementById("validationServer02").value;
+        let phone = document.getElementById("validationServer03").value;
+        let date = document.getElementById("validationServer04").value;
+        let month = document.getElementById("validationServer05").value;
+        let year = document.getElementById("validationServer06").value;
+        let currentPass = document.getElementById("validationServer07").value;
+        let newPass = document.getElementById("validationServer08").value;
+        let cNewPass = document.getElementById("validationServer09").value;
+        console.log(fname);
+        console.log(lname);
+        console.log(phone);
+        console.log(date);
+        console.log(index);
+        console.log(curPass);
+        console.log(phone.length);
+        console.log(year.length);
+        console.log(currentPass);
+        console.log(date);
+        console.log(month);
+        console.log(year);
+        if (
+          fname != "" &&
+          lname != "" &&
+          phone != "" &&
+          date != "" &&
+          month != "" &&
+          year != "" &&
+          currentPass != "" &&
+          newPass != "" &&
+          cNewPass != ""
+        ) {
+          if (
+            phone.length <= 10 &&
+            currentPass == curPass &&
+            newPass == cNewPass &&
+            date < 31 &&
+            date > 1 &&
+            month < 12 &&
+            month > 1 &&
+            year.length <= 4
+          ) {
+            if (newPass.length > 8) {
+              var user = {
+                ...users[index],
+                password: newPass,
+                phone: phone,
+                firstname: fname,
+                lastname: lname,
+                date: date,
+                month: month,
+                year: year,
+              };
+              users[index] = user;
+              localStorage.setItem("user", JSON.stringify(users));
+              Swal.fire("Cập nhật thành công!", "Click để xác nhận!", "Ok");
+            } else {
+              document.getElementById("checkC").innerHTML =
+                "Độ dài mật khẩu phải trên 8 ký tự!";
+            }
+          } else {
+            document.getElementById("checkU").innerHTML =
+              "Nhập sai thông tin hoặc mật khẩu không đúng!";
+          }
+        } else {
+          document.getElementById("checkU").innerHTML =
+            "Vui lòng nhập đầy đủ thông tin!";
+        }
+      });
+    });
   }
 });

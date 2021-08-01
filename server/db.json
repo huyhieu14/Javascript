@@ -153,45 +153,13 @@
       "state": "TT.Huế",
       "zip": "12000",
       "cardName": "Nguyễn Phan Huy hiếu",
-      "cardNumber": "123",
-      "expmonth": "123",
-      "expyear": "123",
-      "ccv": "123",
-      "total": "6446",
-      "Products[product]": "[object Object],[object Object],[object Object],[object Object]",
-      "id": 3
-    },
-    {
-      "fullName": "Nguyễn Văn Hoàng",
-      "email": "nguyenvanhoang@gmail.com",
-      "address": "Chi Lăng",
-      "city": "Huế",
-      "state": "Thừa Thiên huế",
-      "zip": "553000",
-      "cardName": "Nguyễn Phan Huy hiếu",
-      "cardNumber": "123",
-      "expmonth": "123",
-      "expyear": "123",
-      "ccv": "123",
-      "total": "5097",
-      "Products[product]": "[object Object],[object Object],[object Object]",
-      "id": 4
-    },
-    {
-      "fullName": "Trần Hữu Tài",
-      "email": "huyhieu.nguyenphan@gmail.com",
-      "address": "113 Trần Phú",
-      "city": "Huế",
-      "state": "TT.Huế",
-      "zip": "12000",
-      "cardName": "123",
-      "cardNumber": "123",
-      "expmonth": "123",
-      "expyear": "123",
-      "ccv": "123",
-      "total": "8795",
+      "cardNumber": "11112222888877776666",
+      "expmonth": "8",
+      "expyear": "2023",
+      "ccv": "322",
+      "total": "2948",
       "Products[product]": "[object Object],[object Object]",
-      "id": 6
+      "id": 7
     }
   ]
 }

@@ -71,7 +71,7 @@ var html = list.map((infoCustomer, index) => {
                               <li><b>Địa chỉ:</b> ${infoCustomer.address}</li>
                               <li><b>Thành Phố:</b>${infoCustomer.city}</li>
                               <li><b>Tỉnh:</b> ${infoCustomer.state}</li>
-                              <li><b>Zipcode:</b>${infoCustomer.zip}</li>
+                              <li><b>Số điện thoại:</b>${infoCustomer.zip}</li>
                               <li><hr /></li>
                               <li><b>Thông tin thanh toán</b></li>
                               <li>

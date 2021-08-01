@@ -1,6 +1,7 @@
 var carts = JSON.parse(localStorage.getItem("carts") || "[]");
-
-
+var user = JSON.parse(localStorage.getItem("user") || "[]");
+var checkUser = localStorage.getItem("userCurrent2");
+console.log(checkUser);
 carts.map((cart, index) => {
   cartProduct.insertAdjacentHTML(
     "afterbegin",
@@ -58,6 +59,179 @@ carts.map((cart, index) => {
                 </tr>
         `
   );
+});
+
+user.map((user) => {
+  if ((user.email == checkUser)) {
+    checkOut.insertAdjacentHTML(
+
+      "beforeend",
+      `
+      <form id="validate" action="http://localhost:3000/Oder" method="POST" target="submitForm">
+      <div class="row">
+        <div class="col-6">
+          <h3>Địa chỉ thanh toán
+          </h3>
+          <label for="fname"
+            ><i class="fa fa-user"></i> Họ và tên</label
+          >
+          <input
+            type="text"
+            id="fname"
+            name="fullName"
+            placeholder="Tên của bạn"
+            required
+            value="${user.userName}"
+          />
+          <label for="email"
+            ><i class="fa fa-envelope"></i> Email</label
+          >
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="nguyenvana@gmail.com"
+            required
+            value="${user.email}"
+          />
+          <label for="adr"
+            ><i class="fa fa-address-card-o"></i> Địa chỉ</label
+          >
+          <input
+            type="text"
+            id="adr"
+            name="address"
+            placeholder="113 Trần Phú"
+            required
+          />
+          <label for="city"
+            ><i class="fa fa-institution"></i> Thành Phố</label
+          >
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Huế"
+            required
+          />
+
+          <div class="row">
+            <div class="col-50">
+              <label for="state">Tỉnh</label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="TT.Huế"
+                required
+              />
+            </div>
+            <div class="col-50">
+              <label for="zip">Số điện thoại</label>
+              <input
+                type="text"
+                id="zip"
+                name="zip"
+                placeholder="+84"
+                required
+                value="${user.phone}"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Thanh toán</h3>
+          <label for="fname">Hình thức thanh toán hỗ trợ</label>
+          <div class="icon-container">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-discover"></i>
+          </div>
+
+          <label for="cname">Tên trên Card</label>
+          <input
+            type="text"
+            id="cname"
+            name="cardName"
+            placeholder="Soeng Souy"
+            required
+          />
+          <label for="ccnum">Mã credit card</label>
+          <input
+            type="text"
+            id="ccnum"
+            name="cardNumber"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+          <label for="expmonth">Tháng hết hạn</label>
+          <input
+            type="text"
+            id="expmonth"
+            name="expmonth"
+            placeholder="September"
+            required
+          />
+          <div class="row">
+            <div class="col-6">
+              <label for="expyear">Năm hết hạn</label>
+              <input
+                type="text"
+                id="expyear"
+                name="expyear"
+                placeholder="2021"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                id="cvv"
+                name="ccv"
+                placeholder="352"
+                required
+              />
+            </div>
+            <div class="col-6 d-none">
+              <label for="cvv">Total</label>
+              <input
+                type="text"
+                id="total"
+                name="total"
+                placeholder="352"
+                value=
+                required
+              />
+            </div>
+            <div class="col-6 d-none">
+              <label for="cvv">Products</label>
+              <input
+                type="text"
+                id="Products"
+                name="Products[product]"
+                placeholder="352"
+                value=[]
+                required
+              />
+            </div>
+            <div class="col-12">
+              <button
+              type="submit"
+              value="THANH TOÁN"
+              class="btn mt-4"
+              id="btn-check"
+              onClick="reloadCard()"
+            >THANH TOÁN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>  
+      `
+    );
+  }
 });
 
 var totalS = 0;
@@ -141,14 +315,13 @@ function tempPayment() {
     document.getElementById("shipping").innerHTML = "$" + 100;
   }
   document.getElementById("finalTotal").innerHTML = "$" + finalTotal;
-  localStorage.setItem("finalPayment", finalTotal)
+  localStorage.setItem("finalPayment", finalTotal);
 }
 
 tempPayment();
 var total = localStorage.getItem("finalPayment");
-document.getElementById("total").setAttribute('value', total);
-document.getElementById("Products").setAttribute('value', carts);
-function reloadCart(){
+document.getElementById("total").setAttribute("value", total);
+document.getElementById("Products").setAttribute("value", carts);
+function reloadCart() {
   localStorage.setItem("carts", []);
 }
-

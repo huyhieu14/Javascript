@@ -21,10 +21,10 @@ userCurrentAdmin2
   ? (document.getElementById("emailCurrentAdmin2").innerHTML =
       userCurrentAdmin2)
   : null;
-userCurrentAdmin2
-  ? (document.getElementById("emailCurrentAdmin3").innerHTML =
-      userCurrentAdmin2)
-  : null;
+// userCurrentAdmin2
+//   ? (document.getElementById("emailCurrentAdmin3").innerHTML =
+//       userCurrentAdmin2)
+//   : null;
 
 function checkLoginAdmin() {
   var cEmailLogin = document.getElementById("emailLogin").value;

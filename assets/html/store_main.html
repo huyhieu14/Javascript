@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 position-fixed" style="z-index: 10;">
       <div class="">
         <div class="top-header">
           <div class="container p-0">
@@ -56,14 +56,14 @@
         <div class="middle-header">
           <div class="row container p-0">
             <div
-              class="col-md-6 align-self-center p-0 text-center text-md-start"
+              class="col-md-7 align-self-center p-0 text-center text-md-start"
             >
               <spans style="font-size: 15px; color: #ffffff"
                 >Cửa hàng trực tuyến chính thức tại VN / MIỄN PHÍ VẬN CHUYỂN ĐƠN
-                HÀNG TRÊN $25</spans
+                HÀNG TRÊN $2500</spans
               >
             </div>
-            <div class="col-md-6 align-self-center p-0">
+            <div class="col-md-5 align-self-center p-0">
               <span
                 style="
                   margin-bottom: 0px;
@@ -100,7 +100,7 @@
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
                           <button class="dropdown-item" type="button">
-                            <a href="./cart.html">Giỏ Hàng</a>
+                            <a href="./cart.html" class=" text-dark text-decoration-none"><i class="fal fa-shopping-cart"></i> Giỏ Hàng</a>
                           </button>
                         </li>
                         <li>
@@ -137,8 +137,8 @@
       </div>
     </header>
     <div class="container-fluid p-0 overflow-hidden">
-      <div class="slide overflow-hidden">
-        <div class="sliders d-flex">
+      <div class="slide overflow-hidden mt-5">
+        <div class="sliders d-flex overflow-hidden">
           <input type="radio" name="radio-btn" id="radio1" />
           <input type="radio" name="radio-btn" id="radio2" />
           <input type="radio" name="radio-btn" id="radio3" />
@@ -303,6 +303,12 @@
         <div class="align-center m-auto" style="width: 80%">
           <div class="row">
             <div class="col-sm-12">
+              <select class="form-select w-25" aria-label="Default select example" id="pageNumber">
+                <option selected>Số lượng hiển thị trên trang</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+              </select>
               <div class="row product" id="product">
                 <!-- Render-Product -->
               </div>
@@ -337,68 +343,6 @@
         </a>
       </div>
     </div>
-    <!-- <footer class="container-fluid">
-      <div class="container">
-        <div class="row title d-flex justify-content-between">
-          <div class="col-sm-6">
-            <h3>The Official MSI Shop</h3>
-          </div>
-          <div class="col-sm-6 text-end float-end">Follow us</div>
-        </div>
-        <div class="row info">
-          <ul class="">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </footer> -->
     <footer class="container-fluid p-0 pt-5 d-inline-block">
         <div class="container-footer p-0 ">
             <nav class="nav-shortcut d-flex">
