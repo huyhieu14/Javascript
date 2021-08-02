@@ -65,6 +65,7 @@ fetch("http://localhost:3000/product")
                                     <span class="float-start fs-4 fw-bold">
                                     $<span class="card-price">${card.price}</span>
                                     </span>
+                                    <a type="button" class="btn float-end ms-2" href="../html/product.html">Xem</a>
                                     <button data-id=${card.id} class="btn btn-add float-end">Thêm giỏ hàng </button>
                                 </div>
                             </div>
