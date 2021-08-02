@@ -358,7 +358,7 @@
 }
 
 .product li,
-.product a {
+.product a, .product h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
