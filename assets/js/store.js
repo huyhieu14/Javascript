@@ -46,7 +46,7 @@ fetch("http://localhost:3000/product")
                         <div class="card">
                             <img class="card-img-top align-self-center" src=${card.image} alt="Card image cap" style="width: 160px; height: 160px;">
                             <div class="card-body">
-                                <a href="../html/product.html" class="card-title border-bottom fw-bold text-direction-none text-dark fs-6">${card.title}</a>
+                                <h5><a href="../html/product.html" class="card-title border-bottom fw-bold text-direction-none text-dark fs-6">${card.title}</a></h5>
                                 <div class="card-text border-bottom">
                                     <ul>
                                         <li class="card-system">${card.system}
