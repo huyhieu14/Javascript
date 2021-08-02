@@ -415,4 +415,20 @@
 .able-info table tr {
   padding: 20px;
 }
+
+.pagination a {
+  color: black;
+}
+
+.pagination a:hover {
+  color: red;
+}
+
+.pagination .page-link {
+  color: black;
+}
+
+.pagination .page-link:hover {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
