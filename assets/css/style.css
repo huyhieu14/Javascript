@@ -358,10 +358,12 @@
 }
 
 .product li,
-.product h5 {
+.product a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .counter {

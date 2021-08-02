@@ -46,7 +46,7 @@ fetch("http://localhost:3000/product")
                         <div class="card">
                             <img class="card-img-top align-self-center" src=${card.image} alt="Card image cap" style="width: 160px; height: 160px;">
                             <div class="card-body">
-                                <h5 class="card-title border-bottom fw-bold">${card.title}</h5>
+                                <a href="../html/product.html" class="card-title border-bottom fw-bold text-direction-none text-dark fs-6">${card.title}</a>
                                 <div class="card-text border-bottom">
                                     <ul>
                                         <li class="card-system">${card.system}
@@ -65,7 +65,6 @@ fetch("http://localhost:3000/product")
                                     <span class="float-start fs-4 fw-bold">
                                     $<span class="card-price">${card.price}</span>
                                     </span>
-                                    <a type="button" class="btn float-end ms-2" href="../html/product.html">Xem</a>
                                     <button data-id=${card.id} class="btn btn-add float-end">Thêm giỏ hàng </button>
                                 </div>
                             </div>
