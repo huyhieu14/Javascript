@@ -327,3 +327,26 @@
         width: 100%;
     }
 }
+
+.able-info{
+    table{
+        tr{
+            padding: 20px;
+        }
+    }
+}
+
+.pagination{
+    a{
+        color:black;
+        &:hover{
+            color:red
+        }
+    }
+    .page-link{
+        color:black;
+        &:hover{
+            color:red
+        }
+    }
+}

@@ -181,8 +181,8 @@ const getParameterByName = (name, url = window.location.href) => {
                       <div class="valid-feedback">Looks good!</div>
                     </div>
                   </div>
-                  <button class="btn btn-primary edit-product-button" type="submit">
-                    Submit form
+                  <button class="btn btn-dark edit-product-button" type="submit">
+                    Lưu
                   </button>
                 </form>
               </div>

@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 position-fixed" style="z-index: 10;">
       <div class="">
         <div class="top-header">
           <div class="container p-0">
@@ -60,7 +60,7 @@
             >
               <spans style="font-size: 15px; color: #ffffff"
                 >Cửa hàng trực tuyến chính thức tại VN / MIỄN PHÍ VẬN CHUYỂN ĐƠN
-                HÀNG TRÊN $25</spans
+                HÀNG TRÊN $2500</spans
               >
             </div>
             <div class="col-md-5 align-self-center p-0">
@@ -89,31 +89,9 @@
                   </li>
                   <li class="dropdown-header p-0">
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="pt-0 pb-0 btn text-white dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Thêm
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li>
-                          <button class="dropdown-item" type="button">
-                            <a href="./cart.html" class=" text-dark text-decoration-none"><i class="fal fa-shopping-cart"></i> Giỏ Hàng</a>
-                          </button>
-                        </li>
-                        <li>
-                          <button class="dropdown-item" type="button">
-                            Another action
-                          </button>
-                        </li>
-                        <li>
-                          <button class="dropdown-item" type="button">
-                            Something else here
-                          </button>
-                        </li>
-                      </ul>
+                      <div class="p-2" type="button">
+                        <a href="./cart.html" class=" text-white text-decoration-none"><i class="fal fa-shopping-cart"></i> Giỏ Hàng</a>
+                      </div>
                     </div>
                   </li>
                   <li
@@ -137,7 +115,7 @@
       </div>
     </header>
     <div class="container-fluid p-0 overflow-hidden">
-      <div class="slide overflow-hidden">
+      <div class="slide overflow-hidden mt-5">
         <div class="sliders d-flex overflow-hidden">
           <input type="radio" name="radio-btn" id="radio1" />
           <input type="radio" name="radio-btn" id="radio2" />
@@ -303,6 +281,12 @@
         <div class="align-center m-auto" style="width: 80%">
           <div class="row">
             <div class="col-sm-12">
+              <select class="form-select w-25" aria-label="Default select example" id="pageNumber">
+                <option selected>Số lượng hiển thị trên trang</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+              </select>
               <div class="row product" id="product">
                 <!-- Render-Product -->
               </div>
@@ -419,6 +403,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="../js/store.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <!-- <script src="../js/cart.js"></script> -->
   <!-- <script src="../js/pagination.js"></script> -->
 </html>

@@ -1,17 +1,6 @@
 {
   "product": [
     {
-      "title": "Aegis RS 10TD-213US Gaming Desktop",
-      "system": "Windows 10 Home",
-      "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
-      "vga": "AMD Radeon™ RX 6700 XT 12GB GDDR6",
-      "ram": "16GB DDR4 3000Mhz (8GB x 2)",
-      "storage": "1TB 2.5 SATA SSD",
-      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-160x160.png",
-      "price": "1299",
-      "id": 1
-    },
-    {
       "id": 2,
       "title": "MPG Trident A 10TD-1420US Slim Gaming",
       "system": "Windows 10 Home",
@@ -47,16 +36,15 @@
       "id": 4
     },
     {
-      "id": 5,
       "title": "MEG Trident X 10TD-1282US Slim Gaming",
-      "system": "Windows 10 Home",
+      "system": "Windows 10 Pro",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
       "vga": "NVIDIA® GeForce RTX™ 3070 8G GDDR6",
       "ram": "32GB DDR4 3000 MHz (2 x 16GB)",
       "storage": "1TB M.2 NVMe SSD",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/TRIDENTX10T/TRIDENT10-1-160x160.png",
       "price": "2399",
-      "category": "Laptop"
+      "id": 5
     },
     {
       "title": "GF75 Thin 10SDR-455 17.3 FHD 123",
@@ -130,13 +118,30 @@
   ],
   "Oder": [
     {
+      "fullName": "Nguyễn Trương Anh Kiệt",
+      "email": "clonekietver1001@gmail.com",
+      "address": "batrieu",
+      "city": "huế",
+      "state": "huế",
+      "zip": "0987564536",
+      "cardName": "Nguyễn Trương Anh Kiệt",
+      "cardNumber": "1111222233334444",
+      "expmonth": "9",
+      "expyear": "2021",
+      "ccv": "121",
+      "total": "4047",
+      "Products[product]": "[object Object],[object Object],[object Object]",
+      "id": 1
+    },
+    {
       "fullName": "Nguyễn Phan Huy hiếu",
       "email": "huyhieu.nguyenphan@gmail.com",
       "address": "113 Trần Phú",
       "city": "Huế",
       "state": "TT.Huế",
-      "zip": "0911348766",
+      "zip": "12000",
       "cardName": "Nguyễn Phan Huy hiếu",
+<<<<<<< HEAD
       "cardNumber": "4567894514671345",
       "expmonth": "9",
       "expyear": "2025",
@@ -176,6 +181,15 @@
       "total": "2948",
       "Products[product]": "[object Object],[object Object]",
       "id": 4
+=======
+      "cardNumber": "11112222888877776666",
+      "expmonth": "8",
+      "expyear": "2023",
+      "ccv": "322",
+      "total": "2948",
+      "Products[product]": "[object Object],[object Object]",
+      "id": 7
+>>>>>>> c41be460a372125a7015123ee0d9b77222a4d37f
     }
   ]
 }
