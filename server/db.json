@@ -160,6 +160,22 @@
       "total": "1199",
       "Products[product]": "[object Object]",
       "id": 3
+    },
+    {
+      "fullName": "Nguyễn Phan Huy Hiếu",
+      "email": "huyhieu.nguyenphan@gmail.com",
+      "address": "113",
+      "city": "Huế",
+      "state": "Hurrd",
+      "zip": "123123",
+      "cardName": "213123",
+      "cardNumber": "123",
+      "expmonth": "123",
+      "expyear": "123",
+      "ccv": "123",
+      "total": "2948",
+      "Products[product]": "[object Object],[object Object]",
+      "id": 4
     }
   ]
 }
