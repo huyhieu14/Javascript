@@ -64,7 +64,6 @@ carts.map((cart, index) => {
 user.map((user) => {
   if ((user.email == checkUser)) {
     checkOut.insertAdjacentHTML(
-
       "beforeend",
       `
       <form id="validate" action="http://localhost:3000/Oder" method="POST" target="submitForm">

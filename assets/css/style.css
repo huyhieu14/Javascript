@@ -411,4 +411,8 @@
 .product-cart .info-cart {
   width: 100%;
 }
+
+.able-info table tr {
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,7 @@ const getParameterByName = (name, url = window.location.href) => {
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 };
+
 const page = getParameterByName("page") || 1;
 var arrProduct = [];
 fetch("http://localhost:3000/product")
@@ -138,9 +139,23 @@ const addProduct = (e) => {
     value,
   };
   if (carts.some((card) => card.id === id)) {
-    console.log("Đã có trong giỏ hàng");
+    // var index = carts.findIndex((card) => card.id === id);
+    // var cart = {
+    //   ...carts[index],
+    //   value: value++,
+    // }
+    // carts[index] = cart;
+    // localStorage.setItem("carts", JSON.stringify(carts));
+    swal({
+      position: "top-end",
+      icon: "warning",
+      title: "Sản phẩm đã có trong giỏ hàng",
+      showConfirmButton: false,
+      timer: 1000,
+    });
     return;
   }
   carts.push(card);
   localStorage.setItem("carts", JSON.stringify(carts));
+  swal("Đã thêm vào giỏ hàng!", "You clicked the button!", "success");
 };
