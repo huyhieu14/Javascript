@@ -73,7 +73,9 @@ body{
 }
 
 .wrapper{
-  margin-top: 100px;
+  position:relative;
+  right: 100px;
+  margin-top: 10%;
   width: 700px;
   display: flex;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
