@@ -176,7 +176,7 @@ users.map((user, index) => {
                                     <span id="checkC"></span>
                                   </div>
                                 </div>
-                                <div class="col-md-3 mb-3">
+                                <div class="col-md-4 mb-3">
                                   <label for="validationServer09">Nhập lại mật khẩu mới</label>
                                   <input
                                     type="password"
