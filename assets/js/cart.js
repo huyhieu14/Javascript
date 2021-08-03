@@ -221,7 +221,7 @@ user.map((user) => {
               value="THANH TOÁN"
               class="btn mt-4"
               id="btn-check"
-              onClick="reloadCard()"
+              onClick="reloadCart()"
             >THANH TOÁN</button>
             </div>
           </div>
@@ -306,7 +306,7 @@ function tempPayment() {
   document.getElementById("tempTotal").innerHTML = "$" + total;
   document.getElementById("totalQuantity").innerHTML = totalQuantity;
 
-  if (total > 2500) {
+  if (total > 2500 || total == 0) {
     finalTotal = total;
     document.getElementById("shipping").innerHTML = "Miễn Phí";
   } else {
@@ -321,6 +321,11 @@ tempPayment();
 var total = localStorage.getItem("finalPayment");
 document.getElementById("total").setAttribute("value", total);
 document.getElementById("Products").setAttribute("value", carts);
+
 function reloadCart() {
+  console.log("ABC")
   localStorage.setItem("carts", []);
+  Swal.fire("Cảm ơn bạn đã mua hàng!", "Click để xác nhận!", "Ok");
+    window.location="../../index.html";
 }
+

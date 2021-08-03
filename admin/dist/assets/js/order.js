@@ -1,4 +1,4 @@
-var carts = JSON.parse(localStorage.getItem("carts") || []);
+// var carts = JSON.parse(localStorage.getItem("carts") || []);
 var total = localStorage.getItem("finalPayment");
 var informations = [];
 fetch("http://localhost:3000/Oder")

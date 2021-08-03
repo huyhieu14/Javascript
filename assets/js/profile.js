@@ -164,7 +164,8 @@ users.map((user, index) => {
                                       value="${user.phone}"
                                     />
                                   </div>
-                                  <div class="col-md-12 mb-3">
+                                  <div class="row">
+                                  <div class="col-md-4 mb-3">
                                     <label for="validationServer04">Ngày sinh</label>
                                     <input
                                       type="text"
@@ -175,7 +176,7 @@ users.map((user, index) => {
                                       value="${user.date}"
                                     />
                                   </div>
-                                  <div class="col-md-12 mb-3">
+                                  <div class="col-md-4 mb-3">
                                     <label for="validationServer05">Tháng sinh</label>
                                     <input
                                       type="text"
@@ -186,7 +187,7 @@ users.map((user, index) => {
                                       value="${user.month}"
                                     />
                                   </div>
-                                  <div class="col-md-12 mb-3">
+                                  <div class="col-md-4 mb-3">
                                     <label for="validationServer06">Năm sinh</label>
                                     <input
                                       type="text"
@@ -196,6 +197,7 @@ users.map((user, index) => {
                                       required
                                       value="${user.year}"
                                     />
+                                  </div>
                                   </div>
                                   </div>    
                                 </div>
