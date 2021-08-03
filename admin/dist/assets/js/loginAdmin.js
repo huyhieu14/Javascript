@@ -89,8 +89,7 @@ function checkRegister() {
           lastname: "",
           date: "",
           month: "",
-          year: "",
-          
+          year: ""
         };
         listAccountAdmin.push(user);
         localStorage.setItem("user", JSON.stringify(listAccountAdmin));
