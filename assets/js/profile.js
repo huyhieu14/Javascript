@@ -4,98 +4,101 @@ var users = localStorage.getItem("user")
 var checkUser = localStorage.getItem("userCurrent2");
 console.log(checkUser);
 users.map((user) => {
-  info.insertAdjacentHTML(
-    "afterbegin",
-    `
-          <div class="left">
-          <img src="https://cdn.worldvectorlogo.com/logos/msi-gaming.svg" class="img-fluid">
-                <h4>${user.userName}</h4>
-                <p>User</p>
-              </div>
-              <div class="right">
-                <div class="info">
-                  <h3>Thông tin</h3>
-                  <div class="info_data">
-                    <div class="data w-100">
-                      <h4>Name</h4>
-                      <p>${user.firstname} ${user.lastname}</p>
-                    </div>
-                  </div>
-                  <div class="info_data">
-                    <div class="data w-100">
-                      <h4>Email</h4>
-                      <p>${user.email}</p>
-                    </div>
-                  </div>
-                  <div class="info_data">
-                      <div class="data">
-                        <h4>Ngày sinh</h4>
-                        <p>${user.date} / ${user.month} / ${user.year}</p>
+    if(user.email == checkUser){
+        info.insertAdjacentHTML(
+            "afterbegin",
+            `
+                  <div class="left">
+                  <img src="https://cdn.worldvectorlogo.com/logos/msi-gaming.svg" class="img-fluid">
+                        <h4>${user.userName}</h4>
+                        <p>User</p>
                       </div>
-                      <div class="data">
-                          <h4>Số điện thoại</h4>
-                          <p>${user.phone}</p>
+                      <div class="right">
+                        <div class="info">
+                          <h3>Thông tin</h3>
+                          <div class="info_data">
+                            <div class="data w-100">
+                              <h4>Name</h4>
+                              <p>${user.firstname} ${user.lastname}</p>
+                            </div>
+                          </div>
+                          <div class="info_data">
+                            <div class="data w-100">
+                              <h4>Email</h4>
+                              <p>${user.email}</p>
+                            </div>
+                          </div>
+                          <div class="info_data">
+                              <div class="data">
+                                <h4>Ngày sinh</h4>
+                                <p>${user.date} / ${user.month} / ${user.year}</p>
+                              </div>
+                              <div class="data">
+                                  <h4>Số điện thoại</h4>
+                                  <p>${user.phone}</p>
+                                </div>
+                          </div>
+                          <div>
+                              <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#exampleModal">Thay đổi / cập nhật thông tin</button>
+                          </div>
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Cập nhật thông tin</h5>
+                                  <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body" id="updateProfile">
+                                 
+                              </div>
+                              </div>
+                          </div>
+                          </div>
                         </div>
-                  </div>
-                  <div>
-                      <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#exampleModal">Thay đổi / cập nhật thông tin</button>
-                  </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Cập nhật thông tin</h5>
-                          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                          </button>
+                        <div class="projects">
+                          <h3>Password</h3>
+                          <div class="projects_data">
+                            <div class="data">
+                              <label for="">Nhập mật khẩu cũ</label>
+                              <input type="password" class="border form-control" id="validationServer07"/>
+                            </div>
+                          </div>
+                          <div class="projects_data">
+                            <div class="data">
+                              <label for="">Nhập mật khẩu mới</label>
+                              <input type="password" class="border form-control"   id="validationServer08"/>
+                            </div>
+                            <div class="data">
+                              <label for="">Nhập lại mật khẩu mới</label>
+                              <input type="password" class="border form-control"  id="validationServer09"/>
+                            </div>
+                          </div>
+                          <span id="checkU2"></span>
+                          <div class="mt-3">
+                              <button type="button" class="btn btn-danger btn-changePass">Thay đổi mật khẩu</button>
+                          </div>
+                          
+                        </div>
+                        <div class="social_media">
+                          <ul class="p-0">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="modal-body" id="updateProfile">
-                         
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="projects">
-                  <h3>Password</h3>
-                  <div class="projects_data">
-                    <div class="data">
-                      <label for="">Nhập mật khẩu cũ</label>
-                      <input type="password" class="border form-control" id="validationServer07"/>
-                    </div>
-                  </div>
-                  <div class="projects_data">
-                    <div class="data">
-                      <label for="">Nhập mật khẩu mới</label>
-                      <input type="password" class="border form-control"   id="validationServer08"/>
-                    </div>
-                    <div class="data">
-                      <label for="">Nhập lại mật khẩu mới</label>
-                      <input type="password" class="border form-control"  id="validationServer09"/>
-                    </div>
-                  </div>
-                  <span id="checkU2"></span>
-                  <div class="mt-3">
-                      <button type="button" class="btn btn-danger btn-changePass">Thay đổi mật khẩu</button>
-                  </div>
-                  
-                </div>
-                <div class="social_media">
-                  <ul class="p-0">
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          `
-  );
+                  `
+          );
+    }
+ 
 });
 
 users.map((user, index) => {
