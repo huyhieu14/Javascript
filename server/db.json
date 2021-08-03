@@ -148,6 +148,22 @@
       "total": "2948",
       "Products[product]": "[object Object],[object Object]",
       "id": 7
+    },
+    {
+      "fullName": "Nguyễn Phan Huy hiếu",
+      "email": "huyhieu.nguyenphan@gmail.com",
+      "address": "113 Trần Phú",
+      "city": "Huế",
+      "state": "TT.Huế",
+      "zip": "0911348766",
+      "cardName": "Nguyễn Phan Huy hiếu",
+      "cardNumber": "1223123332123213",
+      "expmonth": "9",
+      "expyear": "2025",
+      "ccv": "123",
+      "total": "1199",
+      "Products[product]": "[object Object]",
+      "id": 8
     }
   ]
 }
