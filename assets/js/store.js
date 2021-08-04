@@ -1,7 +1,7 @@
 var carts = localStorage.getItem("carts")
   ? JSON.parse(localStorage.getItem("carts"))
   : [];
-  
+
 function sliderStore() {
   var indexSlider = 1;
   setInterval(() => {
@@ -23,14 +23,24 @@ const getParameterByName = (name, url = window.location.href) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 };
 
+
+function loadPage(obj) {
 const page = getParameterByName("page") || 1;
 var arrProduct = [];
 fetch("http://localhost:3000/product")
   .then((res) => res.json())
   .then((data) => {
-    // let pageNumber = document.getElementById().value;
+    // var options = obj.children;
+    // var html = "";
+    // for (var i = 0; i < options.length; i++) {
+    //   if (options[i].selected) {
+    //     html += options[i].value;
+    //   }
+    // }
     arrProduct = [...data].reverse();
-    var perPage = 8;
+    var perPage = 12;
+    // console.log(html);
+    console.log(perPage);
     var start = (page - 1) * perPage;
     var end = page * perPage;
     var totalPages = Math.ceil(arrProduct.length / perPage);
@@ -85,8 +95,10 @@ fetch("http://localhost:3000/product")
       );
     });
     addEventButton();
-});
+  });
+}
 
+loadPage(this);
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);

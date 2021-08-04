@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+* {
+  font-family: 'DINPro-Regular', sans-serif;
+}
+
 input {
   outline: none;
   margin: 0;
@@ -57,7 +61,7 @@ input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'DINPro-Regular', sans-serif;
 }
 
 body {

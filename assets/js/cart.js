@@ -1,4 +1,5 @@
 var carts = JSON.parse(localStorage.getItem("carts") || "[]");
+console.log(carts);
 var user = JSON.parse(localStorage.getItem("user") || "[]");
 var checkUser = localStorage.getItem("userCurrent2");
 console.log(checkUser);
@@ -61,7 +62,7 @@ carts.map((cart, index) => {
   );
 });
 
-user.map((user) => {
+user.map((user, carts) => {
   if ((user.email == checkUser)) {
     checkOut.insertAdjacentHTML(
       "beforeend",
@@ -206,15 +207,9 @@ user.map((user) => {
             </div>
             <div class="col-6 d-none">
               <label for="cvv">Products</label>
-              <input
-                type="text"
-                id="Products"
-                name="Products[product]"
-                placeholder="352"
-                value=[]
-                required
-              />
+              
             </div>
+            
             <div class="col-12">
               <button
               type="submit"
@@ -234,6 +229,7 @@ user.map((user) => {
 });
 
 var totalS = 0;
+
 
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
@@ -294,8 +290,18 @@ function decreaseCount(a, b) {
     });
   });
 })();
+var valueDiscount = "SUMMER-2021"
 
+var discount = 0;
 function tempPayment() {
+  var valueDiscount = "SUMMER-2021"
+  var inputDiscount = document.getElementById("discount").value
+  if (inputDiscount != "" && inputDiscount == valueDiscount){
+    discount = 200;
+    document.getElementById("monneyDiscount").innerHTML = "$" + discount;
+  } else {
+    document.getElementById("monneyDiscount").innerHTML = "$" + 0;
+  }
   let total = 0;
   let finalTotal = 0;
   let totalQuantity = 0;
@@ -306,11 +312,12 @@ function tempPayment() {
   document.getElementById("tempTotal").innerHTML = "$" + total;
   document.getElementById("totalQuantity").innerHTML = totalQuantity;
 
-  if (total > 2500 || total == 0) {
-    finalTotal = total;
+  if (total > 2500 || total == 0 || discount != 0) {
+    finalTotal = total - discount;
+    console.log(discount)
     document.getElementById("shipping").innerHTML = "Miễn Phí";
   } else {
-    finalTotal = total + 100;
+    finalTotal = total + 100 - discount;
     document.getElementById("shipping").innerHTML = "$" + 100;
   }
   document.getElementById("finalTotal").innerHTML = "$" + finalTotal;
@@ -318,6 +325,18 @@ function tempPayment() {
 }
 
 tempPayment();
+function caculateDis(){
+  var inputDiscount = document.getElementById("discount").value
+  if (inputDiscount != "" && inputDiscount == valueDiscount){
+    discount = 200;
+    document.getElementById("monneyDiscount").innerHTML = "$" + discount;
+  } else {
+    discount = 0;
+    document.getElementById("monneyDiscount").innerHTML = "$" + 0;
+  }
+  console.log(discount)
+  tempPayment()
+}
 var total = localStorage.getItem("finalPayment");
 document.getElementById("total").setAttribute("value", total);
 document.getElementById("Products").setAttribute("value", carts);
