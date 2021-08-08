@@ -1,27 +1,14 @@
 {
   "product": [
     {
-      "title": "GF75 Thin 10SDR-455 17.3\" FHD",
-      "system": "Windows 10 Home",
-      "core": "Intel® Core™ i5-10300H 2.5GHz",
-      "vga": "G GDDR6 NVIDIA® GeForce® GTX 1660 Ti",
-      "ram": "8GB (8G*1) DDR4 2666MHz",
-      "storage": "512GB NVMe SSD  ",
-      "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Laptops/GF75/10TH/GF75THIN-1-228x228.png",
-      "price": "1009",
-      "category": "Laptop",
-      "id": 5
-    },
-    {
       "title": "Aegis RS 10TD-213US Gaming Desktop",
       "system": "Windows 10 Home",
       "core": "Intel Core™ i7-10700K 8 Cores 3.8-5.1 GHz 16M Cache",
       "vga": "NVIDIA® GeForce RTX™ 3070 8GB GDDR6",
       "ram": "16GB DDR4 3000Mhz (8GB x 2)",
-      "storage": "1TB 2.5\" SATA SSD",
+      "storage": "1TB 2.5",
       "image": "https://us-store.msi.com/image/cache/catalog/Pd_page/Desktops/AegisRS/AEGISRS-1-228x228.png",
-      "price": "2099",
-      "category": "PC",
+      "price": "2000",
       "id": 6
     },
     {
@@ -299,6 +286,18 @@
       "price": "3499",
       "category": "Laptop",
       "id": 29
+    },
+    {
+      "title": "MPG Trident 3 10TC-268US Gaming Desktop",
+      "system": "Windows 10 Home",
+      "core": "Core i5",
+      "vga": "gtx1060",
+      "ram": "8gb",
+      "storage": "ssd 512gb",
+      "image": "https://cdn.nguyenkimmall.com/images/detailed/724/10049049-laptop-lenovo-ideapad-3-14itl6-i3-1115g4-14-inch-82h700dnvn-1_2qns-0w.jpg",
+      "price": "2099",
+      "category": "Laptop",
+      "id": 30
     }
   ],
   "Oder": [
