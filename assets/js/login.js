@@ -34,6 +34,7 @@ function checkRegister() {
   var cNameRegister = document.getElementById("name").value;
   var cEmailRegister = document.getElementById("emailRegister").value;
   var cPassRegister = document.getElementById("passRegister").value;
+  var cConfirmPassReg = document.getElementById("cpassRegister").value;
   var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
     String(cEmailRegister).toLowerCase()
   );
@@ -42,6 +43,7 @@ function checkRegister() {
     cNameRegister != "" ||
     cEmailRegister != "" ||
     cPassRegister != "" ||
+    cConfirmPassReg != "" ||
     cEmailRegister.match(emailFormat)
   ) {
     if (listAccount.some((user) => user.email === cEmailRegister)) {
@@ -49,21 +51,31 @@ function checkRegister() {
         "Tài khoản đã tồn tại!";
       return;
     } else {
-      var user = {
-        userName: cNameRegister,
-        email: cEmailRegister,
-        password: cPassRegister,
-        role: 0,
-        phone: "",
-        firstname: "",
-        lastname: "",
-        date: "",
-        month: "",
-        year: "",
-      };
-      listAccount.push(user);
-      localStorage.setItem("user", JSON.stringify(listAccount));
-      Swal.fire("ĐĂNG KÝ THÀNH CÔNG!", "Click ok để xác nhận!", "Ok");
+      if (cPassRegister.length >= 8){
+        if(cPassRegister === cConfirmPassReg){
+          var user = {
+            userName: cNameRegister,
+            email: cEmailRegister,
+            password: cPassRegister,
+            role: 0,
+            phone: "",
+            firstname: "",
+            lastname: "",
+            date: "",
+            month: "",
+            year: "",
+          };
+          listAccount.push(user);
+          localStorage.setItem("user", JSON.stringify(listAccount));
+          Swal.fire("ĐĂNG KÝ THÀNH CÔNG!", "Vui lòng check email và Click ok để xác nhận!", "Ok");
+        } else {
+          document.getElementById("checkError2").innerHTML =
+        "Xác nhận mật khẩu không chính xác!";
+        }
+      } else {
+        document.getElementById("checkError2").innerHTML =
+        "Mật khẩu cần phải trên 8 ký tự!";
+      }
     }
   } else {
     document.getElementById("checkError2").innerHTML =

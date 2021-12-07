@@ -248,55 +248,53 @@
             <!-- Top Statistics -->
             <div class="row">
               <div class="col-12">
-                <div class="card card-default">
-                  <div class="card-header justify-content-center">
-                    <h2 class="text-center">Biểu đồ thống kê doanh thu</h2>
-                  </div>
-                  <div class="card-body" style="height: 450px">
-                    <canvas id="linechart" class="chartjs"></canvas>
-                  </div>
+                <div class="p-0"
+            id="chartContainer"
+            style="height: 400px; width: 100%"
+                ></div>
+                <div class="table" id="tableProduct">
+                  <table>
+                    <tr>
+                      <th>Laptop</th>
+                      <td>Số lượng: <span  id="laptop">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>PC</th>
+                      <td>Số lượng: <span  id="pc">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Vga</th>
+                      <td>Số lượng: <span  id="vga">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Gaming Gear</th>
+                      <td>Số lượng: <span  id="gear">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Màn Hình</th>
+                      <td>Số lượng: <span  id="monitor">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Mainboard</th>
+                      <td>Số lượng: <span  id="main">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Khác</th>
+                      <td>Số lượng: <span  id="other">0</span></td>
+                    </tr>
+                    <tr>
+                      <th>Tổng</th>
+                      <td>Số lượng: <span  id="sum">0</span></td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
+            
           </div>
-        <div
-            id="chartContainer"
-            style="height: 400px; width: 100%"
-        ></div>
+         
+        
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script>
-      window.onload = function () {
-        var chart = new CanvasJS.Chart("chartContainer", {
-          theme: "light2", // "light1", "light2", "dark1", "dark2"
-          exportEnabled: true,
-          animationEnabled: true,
-          title: {
-            text: "Tổng số lượng sản phẩm trong kho",
-          },
-          data: [
-            {
-              type: "pie",
-              startAngle: 25,
-              toolTipContent: "<b>{label}</b>: {y}%",
-              showInLegend: "true",
-              legendText: "{label}",
-              indexLabelFontSize: 16,
-              indexLabel: "{label} - {y}%",
-              dataPoints: [
-                { y: 51.08, label: "Laptop" },
-                { y: 27.34, label: "PC" },
-                { y: 10.62, label: "Card Màn Hình" },
-                { y: 5.02, label: "Gaming Gear" },
-                { y: 4.07, label: "Màn Hình" },
-                { y: 1.22, label: "Bo Mạch Chủ" },
-                { y: 0.44, label: "Others" },
-              ],
-            },
-          ],
-        });
-        chart.render();
-      };
-    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM"
       defer

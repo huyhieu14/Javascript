@@ -1,7 +1,7 @@
 var carts = localStorage.getItem("carts")
   ? JSON.parse(localStorage.getItem("carts"))
   : [];
-  
+
 function sliderStore() {
   var indexSlider = 1;
   setInterval(() => {
@@ -23,14 +23,27 @@ const getParameterByName = (name, url = window.location.href) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 };
 
+<<<<<<< HEAD
+=======
+
+function loadPage(obj) {
+>>>>>>> a1283ad3b7c6e6d0f33fbcbea1428357d767fad9
 const page = getParameterByName("page") || 1;
 var arrProduct = [];
 fetch("http://localhost:3000/product")
   .then((res) => res.json())
   .then((data) => {
-    // let pageNumber = document.getElementById().value;
+    // var options = obj.children;
+    // var html = "";
+    // for (var i = 0; i < options.length; i++) {
+    //   if (options[i].selected) {
+    //     html += options[i].value;
+    //   }
+    // }
     arrProduct = [...data].reverse();
-    var perPage = 8;
+    var perPage = 12;
+    // console.log(html);
+    console.log(perPage);
     var start = (page - 1) * perPage;
     var end = page * perPage;
     var totalPages = Math.ceil(arrProduct.length / perPage);
@@ -46,7 +59,7 @@ fetch("http://localhost:3000/product")
                         <div class="card">
                             <img class="card-img-top align-self-center" src=${card.image} alt="Card image cap" style="width: 160px; height: 160px;">
                             <div class="card-body">
-                                <h5 class="card-title border-bottom fw-bold">${card.title}</h5>
+                                <h5><a href="../html/product.html" class="card-title border-bottom fw-bold text-direction-none text-dark fs-6">${card.title}</a></h5>
                                 <div class="card-text border-bottom">
                                     <ul>
                                         <li class="card-system">${card.system}
@@ -85,8 +98,10 @@ fetch("http://localhost:3000/product")
       );
     });
     addEventButton();
-});
+  });
+}
 
+loadPage(this);
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
@@ -139,9 +154,23 @@ const addProduct = (e) => {
     value,
   };
   if (carts.some((card) => card.id === id)) {
-    console.log("Đã có trong giỏ hàng");
+    // var index = carts.findIndex((card) => card.id === id);
+    // var cart = {
+    //   ...carts[index],
+    //   value: value++,
+    // }
+    // carts[index] = cart;
+    // localStorage.setItem("carts", JSON.stringify(carts));
+    swal({
+      position: "top-end",
+      icon: "warning",
+      title: "Sản phẩm đã có trong giỏ hàng",
+      showConfirmButton: false,
+      timer: 1000,
+    });
     return;
   }
   carts.push(card);
   localStorage.setItem("carts", JSON.stringify(carts));
+  swal("Đã thêm vào giỏ hàng!", "You clicked the button!", "success");
 };

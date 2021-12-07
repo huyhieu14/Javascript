@@ -358,10 +358,12 @@
 }
 
 .product li,
-.product h5 {
+.product a, .product h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .counter {
@@ -415,4 +417,23 @@
 .able-info table tr {
   padding: 20px;
 }
+<<<<<<< HEAD
+=======
+
+.pagination a {
+  color: black;
+}
+
+.pagination a:hover {
+  color: red;
+}
+
+.pagination .page-link {
+  color: black;
+}
+
+.pagination .page-link:hover {
+  color: red;
+}
+>>>>>>> a1283ad3b7c6e6d0f33fbcbea1428357d767fad9
 /*# sourceMappingURL=style.css.map */

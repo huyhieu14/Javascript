@@ -1,4 +1,4 @@
-var carts = JSON.parse(localStorage.getItem("carts") || []);
+// var carts = JSON.parse(localStorage.getItem("carts") || []);
 var total = localStorage.getItem("finalPayment");
 var informations = [];
 fetch("http://localhost:3000/Oder")
@@ -81,8 +81,9 @@ var html = list.map((infoCustomer, index) => {
                               <li><b>Thời Hạn thẻ:</b>${infoCustomer.expmonth}/${infoCustomer.expyear}</li>
                               <li><b>CCV:</b>${infoCustomer.ccv}</li>
                             </ul>
-                            <ul id="listProductModal">
-                               
+                            <ul>
+                            <table id="listProductModal">
+                            </table>
                             </ul>
                           </div>
                           <div class="modal-footer">
@@ -122,7 +123,35 @@ var html = list.map((infoCustomer, index) => {
         `
   );
 });
-}   
+// var htm2 = list.map((item) => {
+//   item.product.map((item2) => {
+//     listProductModal.insertAdjacentHTML(
+//       "afterbegin",
+//       `
+//       <tr>
+//       <td>
+//       <p>${item2.title}</p>
+//       </td>
+//       <td>
+//         <div>
+//           <input  type="text" class="quantity" value="${
+//             item2.value
+//           }" disabled/>
+//         </div>
+//       </td>
+//       <td class=" text-center">
+//         <span class="text-center fs-4">$</span><span class="total-price-cart text-center fs-4">${
+//           item2.price * item2.value
+//         }</span>
+//       </td>
+//     </tr>
+//       `
+//     )
+//   })
+// })
+
+} 
+  
 
 function products(list){
   list.map((item) => {

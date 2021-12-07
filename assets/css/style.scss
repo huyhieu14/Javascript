@@ -287,10 +287,12 @@
         color: white;
     }
     li,
-    h5 {
+    a, h5 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
 
@@ -334,4 +336,22 @@
             padding: 20px;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+.pagination{
+    a{
+        color:black;
+        &:hover{
+            color:red
+        }
+    }
+    .page-link{
+        color:black;
+        &:hover{
+            color:red
+        }
+    }
+>>>>>>> a1283ad3b7c6e6d0f33fbcbea1428357d767fad9
 }
